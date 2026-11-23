@@ -1,0 +1,119 @@
+name: Build APK
+
+# 只负责:打包 → 签名 → 发布 Release。
+# 不直接触发,由 release-on-push.yml 通过 workflow_call 调用。
+
+on:
+  workflow_call:
+    secrets:
+      KEYSTORE_BASE64:
+        required: true
+      KEYSTORE_PASSWORD:
+        required: true
+      KEY_ALIAS:
+        required: true
+      KEY_PASSWORD:
+        required: true
+
+# ============================================================
+# 常量区(版本、命名、目录都在这里改)
+# ============================================================
+env:
+  # 工具版本
+  JDK_DISTRIBUTION: temurin
+  JDK_VERSION: '17'
+  APKTOOL_VERSION: '3.0.3'
+  UBER_SIGNER_VERSION: '1.3.0'
+
+  # 打包判定与产物命名
+  BUILD_MARKER_FILE: apktool.yml        # 存在该文件才视为可打包的反编译源码分支
+  APK_NAME_PREFIX: papagame             # 产物名: <prefix>-<分支名>.apk
+  RELEASE_BODY_TEXT: 自动构建的改机 APK
+
+  # 目录
+  TOOLS_DIR: tools
+  BUILD_DIR: build
+  OUT_DIR: out
+
+jobs:
+  build:
+    runs-on: ubuntu-latest              # runs-on 读不到 env,只能直接写
+    steps:
+      - uses: actions/checkout@v4
+
+      # 没有 BUILD_MARKER_FILE 的分支(如 master / 纯文档分支)直接跳过打包
+      - name: Detect apktool project
+        id: guard
+        run: |
+          if [ -f "$BUILD_MARKER_FILE" ]; then
+            echo "build=yes" >> "$GITHUB_OUTPUT"
+            echo "本分支含反编译源码,开始打包。"
+          else
+            echo "build=no" >> "$GITHUB_OUTPUT"
+            echo "本分支(${{ github.ref_name }})无 $BUILD_MARKER_FILE,跳过打包。"
+          fi
+
+      - name: Set up JDK
+        if: steps.guard.outputs.build == 'yes'
+        uses: actions/setup-java@v4
+        with:
+          distribution: ${{ env.JDK_DISTRIBUTION }}
+          java-version: ${{ env.JDK_VERSION }}
+
+      - name: Download apktool & signer
+        if: steps.guard.outputs.build == 'yes'
+        run: |
+          mkdir -p "$TOOLS_DIR"
+          curl -fsSL -o "$TOOLS_DIR/apktool.jar" \
+            "https://github.com/iBotPeaches/Apktool/releases/download/v${APKTOOL_VERSION}/apktool_${APKTOOL_VERSION}.jar"
+          curl -fsSL -o "$TOOLS_DIR/uber-apk-signer.jar" \
+            "https://github.com/patrickfav/uber-apk-signer/releases/download/v${UBER_SIGNER_VERSION}/uber-apk-signer-${UBER_SIGNER_VERSION}.jar"
+
+      - name: Build APK (apktool)
+        if: steps.guard.outputs.build == 'yes'
+        run: |
+          mkdir -p "$BUILD_DIR"
+          java -jar "$TOOLS_DIR/apktool.jar" b . -o "$BUILD_DIR/app-unsigned.apk"
+
+      - name: Decode keystore
+        if: steps.guard.outputs.build == 'yes'
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+        run: |
+          echo "$KEYSTORE_BASE64" | base64 -d > "$BUILD_DIR/release.jks"
+
+      - name: Sign APK (uber-apk-signer)
+        if: steps.guard.outputs.build == 'yes'
+        env:
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: |
+          java -jar "$TOOLS_DIR/uber-apk-signer.jar" \
+            --apks "$BUILD_DIR/app-unsigned.apk" \
+            --ks "$BUILD_DIR/release.jks" \
+            --ksAlias "$KEY_ALIAS" \
+            --ksPass "$KEYSTORE_PASSWORD" \
+            --ksKeyPass "$KEY_PASSWORD" \
+            --out "$BUILD_DIR/signed" \
+            --overwrite
+
+      - name: Collect single APK
+        if: steps.guard.outputs.build == 'yes'
+        run: |
+          mkdir -p "$OUT_DIR"
+          SIGNED=$(ls "$BUILD_DIR"/signed/*.apk | head -1)
+          cp "$SIGNED" "$OUT_DIR/${APK_NAME_PREFIX}-${{ github.ref_name }}.apk"
+          ls -l "$OUT_DIR"
+
+      # tag = 分支名;同名资产覆盖,保证每个分支 Release 只有一个包
+      - name: Create / update Release
+        if: steps.guard.outputs.build == 'yes'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: ${{ github.ref_name }}
+          body: |
+            ${{ env.RELEASE_BODY_TEXT }}(分支 `${{ github.ref_name }}`,提交 ${{ github.sha }})。
+          files: ${{ env.OUT_DIR }}/${{ env.APK_NAME_PREFIX }}-${{ github.ref_name }}.apk
+          fail_on_unmatched_files: true
