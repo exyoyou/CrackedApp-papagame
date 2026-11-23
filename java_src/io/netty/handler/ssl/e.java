@@ -1,0 +1,5 @@
+package io.netty.handler.ssl;
+
+/* JADX INFO: loaded from: classes.dex */
+public final /* synthetic */ class e {
+}

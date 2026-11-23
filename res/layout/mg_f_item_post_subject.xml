@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.join.kotlin.domain.widget.CornersLinearLayout android:orientation="vertical" android:id="@id/cl_view" android:background="@color/white" android:paddingTop="@dimen/wdp15" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/forum_post_divider" android:layout_width="match_parent" android:layout_height="0.0dp" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/subjectMain" android:paddingLeft="@dimen/wdp30" android:paddingRight="@dimen/wdp30" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/wdp28" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/best" android:background="@drawable/best_tips" android:visibility="gone" android:layout_width="@dimen/wdp45" android:layout_height="@dimen/wdp45" android:layout_marginRight="6.0dp" android:text="精" />
+        <TextView android:textSize="@dimen/wdp28" android:textStyle="bold" android:textColor="#ff333333" android:textColorLink="@color/mg_forum_tag_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/subject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/wdp45" android:text="来啊，互相伤害啊？大叔加我微信吧。" android:maxLines="2" android:singleLine="false" android:includeFontPadding="true" android:lineSpacingMultiplier="1.2" />
+    </LinearLayout>
+</com.join.kotlin.domain.widget.CornersLinearLayout>

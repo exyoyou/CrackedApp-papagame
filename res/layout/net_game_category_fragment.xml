@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/loadContent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.join.mgps.customview.NestedScrollableHost android:layout_width="match_parent" android:layout_height="@dimen/wdp120" android:layout_marginTop="@dimen/wdp15" android:layout_marginStart="@dimen/wdp18" android:layout_marginEnd="@dimen/wdp18">
+                <com.google.android.material.tabs.TabLayout android:id="@id/tablayout" android:layout_width="match_parent" android:layout_height="match_parent" app:tabBackground="@android:color/transparent" app:tabGravity="start" app:tabIndicatorColor="@color/translucent" app:tabIndicatorHeight="0.0dp" app:tabMinWidth="@dimen/wdp130" app:tabMode="scrollable" app:tabPaddingEnd="0.0dp" app:tabPaddingStart="0.0dp" app:tabRippleColor="@null" />
+            </com.join.mgps.customview.NestedScrollableHost>
+            <com.join.mgps.customview.NestedScrollableHost android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.join.mgps.customview.NestedScrollableHost>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

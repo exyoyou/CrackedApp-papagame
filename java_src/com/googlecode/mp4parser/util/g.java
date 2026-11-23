@@ -1,0 +1,221 @@
+package com.googlecode.mp4parser.util;
+
+import androidx.core.text.util.LocalePreferences;
+import com.byazt.hs.sl;
+import com.bykv.vk.component.ttvideo.LiveConfigKey;
+import com.bytedance.sdk.openadsdk.mediation.MediationConstant;
+import com.facebook.common.callercontext.ContextChain;
+import com.kuaishou.weapon.p0.t;
+import com.umeng.analytics.pro.bm;
+import java.util.HashMap;
+import java.util.Map;
+
+/* JADX INFO: loaded from: classes5.dex */
+public class g {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    static Map<String, String> f33786a = new HashMap();
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    static Map<String, String> f33787b = new HashMap();
+
+    static {
+        c("ab", "abk");
+        c("aa", "aar");
+        c("af", "afr");
+        c("ak", "aka");
+        c("sq", "sqi");
+        c("am", "amh");
+        c(com.sigmob.sdk.archives.d.f78708a, "ara");
+        c(x.a.f97583k, "arg");
+        c("hy", "hye");
+        c("as", "asm");
+        c(x.a.f97584l, "ava");
+        c("ae", "ave");
+        c("ay", "aym");
+        c("az", "aze");
+        c("bm", "bam");
+        c("ba", "bak");
+        c("eu", "eus");
+        c("be", "bel");
+        c("bn", "ben");
+        c("bh", "bih");
+        c("bi", "bis");
+        c("bs", "bos");
+        c("br", "bre");
+        c("bg", "bul");
+        c("my", "mya");
+        c("ca", "cat");
+        c("ch", "cha");
+        c("ce", "che");
+        c("ny", "nya");
+        c("zh", "zho");
+        c("cv", "chv");
+        c("kw", "cor");
+        c("co", "cos");
+        c("cr", "cre");
+        c("hr", "hrv");
+        c("cs", "ces");
+        c("da", "dan");
+        c("dv", "div");
+        c("nl", "nld");
+        c("dz", "dzo");
+        c("en", "eng");
+        c("eo", "epo");
+        c("et", "est");
+        c("ee", "ewe");
+        c("fo", "fao");
+        c("fj", "fij");
+        c("fi", "fin");
+        c("fr", "fra");
+        c("ff", "ful");
+        c("gl", "glg");
+        c("ka", "kat");
+        c("de", "deu");
+        c(t.f74889n, "ell");
+        c("gn", "grn");
+        c("gu", "guj");
+        c("ht", "hat");
+        c("ha", "hau");
+        c("he", "heb");
+        c("hz", "her");
+        c("hi", "hin");
+        c("ho", "hmo");
+        c("hu", "hun");
+        c("ia", "ina");
+        c("id", "ind");
+        c("ie", "ile");
+        c("ga", "gle");
+        c("ig", "ibo");
+        c("ik", "ipk");
+        c("io", "ido");
+        c(bm.ae, "isl");
+        c("it", "ita");
+        c("iu", "iku");
+        c("ja", "jpn");
+        c("jv", "jav");
+        c("kl", "kal");
+        c("kn", "kan");
+        c("kr", "kau");
+        c(MediationConstant.ADN_KS, "kas");
+        c("kk", "kaz");
+        c("km", "khm");
+        c("ki", "kik");
+        c(net.lingala.zip4j.util.e.f94694e0, "kin");
+        c("ky", "kir");
+        c("kv", "kom");
+        c("kg", "kon");
+        c("ko", "kor");
+        c("ku", "kur");
+        c("kj", "kua");
+        c("la", com.umeng.analytics.pro.f.C);
+        c("lb", "ltz");
+        c("lg", "lug");
+        c("li", "lim");
+        c("ln", "lin");
+        c("lo", "lao");
+        c("lt", "lit");
+        c("lu", "lub");
+        c("lv", "lav");
+        c("gv", "glv");
+        c("mk", "mkd");
+        c("mg", "mlg");
+        c("ms", "msa");
+        c("ml", "mal");
+        c("mt", "mlt");
+        c("mi", "mri");
+        c("mr", "mar");
+        c("mh", "mah");
+        c("mn", LocalePreferences.FirstDayOfWeek.MONDAY);
+        c("na", "nau");
+        c("nv", "nav");
+        c("nd", "nde");
+        c("ne", "nep");
+        c("ng", "ndo");
+        c("nb", "nob");
+        c("nn", "nno");
+        c("no", "nor");
+        c("ii", "iii");
+        c("nr", "nbl");
+        c("oc", "oci");
+        c("oj", "oji");
+        c("cu", "chu");
+        c("om", "orm");
+        c("or", "ori");
+        c(bm.f84421x, "oss");
+        c("pa", "pan");
+        c(ContextChain.f26845j, "pli");
+        c("fa", "fas");
+        c(bm.aD, "pol");
+        c("ps", "pus");
+        c("pt", "por");
+        c("qu", "que");
+        c(t.f74898w, "roh");
+        c("rn", "run");
+        c("ro", "ron");
+        c("ru", "rus");
+        c("sa", "san");
+        c("sc", "srd");
+        c(LiveConfigKey.STANDARD, "snd");
+        c("se", "sme");
+        c("sm", "smo");
+        c("sg", "sag");
+        c("sr", "srp");
+        c("gd", "gla");
+        c("sn", "sna");
+        c("si", "sin");
+        c("sk", "slk");
+        c(sl.f15090c, "slv");
+        c("so", "som");
+        c("st", "sot");
+        c("es", "spa");
+        c("su", LocalePreferences.FirstDayOfWeek.SUNDAY);
+        c("sw", "swa");
+        c("ss", "ssw");
+        c(x.a.f97582j, "swe");
+        c("ta", "tam");
+        c("te", "tel");
+        c("tg", "tgk");
+        c("th", "tha");
+        c("ti", "tir");
+        c("bo", "bod");
+        c("tk", "tuk");
+        c("tl", "tgl");
+        c("tn", "tsn");
+        c("to", "ton");
+        c("tr", "tur");
+        c("ts", "tso");
+        c("tt", "tat");
+        c("tw", "twi");
+        c(x.a.f97581i, "tah");
+        c("ug", "uig");
+        c("uk", "ukr");
+        c("ur", "urd");
+        c("uz", "uzb");
+        c("ve", "ven");
+        c("vi", "vie");
+        c("vo", "vol");
+        c("wa", "wln");
+        c("cy", "cym");
+        c("wo", "wol");
+        c("fy", "fry");
+        c("xh", "xho");
+        c("yi", "yid");
+        c("yo", "yor");
+        c("za", "zha");
+        c("zu", "zul");
+    }
+
+    public static String a(String str) {
+        return f33786a.get(str);
+    }
+
+    public static String b(String str) {
+        return f33787b.get(str);
+    }
+
+    private static void c(String str, String str2) {
+        f33786a.put(str, str2);
+        f33787b.put(str2, str);
+    }
+}

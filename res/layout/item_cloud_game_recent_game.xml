@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_cloud_game_recent_game_0" android:layout_width="@dimen/wdp110" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/sdv_icon" android:tag="binding_1" android:layout_width="@dimen/wdp90" android:layout_height="@dimen/wdp90" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:roundedCornerRadius="@dimen/wdp16" />
+    <TextView android:textSize="@dimen/wdp20" android:textStyle="bold" android:textColor="#ff3d3d3d" android:ellipsize="end" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp4" android:lines="1" android:maxEms="5" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sdv_icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

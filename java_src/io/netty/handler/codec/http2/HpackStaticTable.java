@@ -1,0 +1,76 @@
+package io.netty.handler.codec.http2;
+
+import com.alipay.sdk.packet.d;
+import com.baidu.mobads.sdk.internal.cm;
+import com.haima.hmcp.ConstantsInternal;
+import com.sigmob.sdk.downloader.core.breakpoint.f;
+import com.windmill.sdk.point.PointCategory;
+import io.netty.handler.codec.UnsupportedValueConverter;
+import io.netty.util.AsciiString;
+import java.util.Arrays;
+import java.util.List;
+import net.lingala.zip4j.util.e;
+import okhttp3.internal.http2.Header;
+import u.c;
+
+/* JADX INFO: loaded from: classes.dex */
+final class HpackStaticTable {
+    private static final CharSequenceMap<Integer> STATIC_INDEX_BY_NAME;
+    private static final List<HpackHeaderField> STATIC_TABLE;
+    static final int length;
+
+    static {
+        List<HpackHeaderField> listAsList = Arrays.asList(newEmptyHeaderField(Header.TARGET_AUTHORITY_UTF8), newHeaderField(Header.TARGET_METHOD_UTF8, "GET"), newHeaderField(Header.TARGET_METHOD_UTF8, "POST"), newHeaderField(Header.TARGET_PATH_UTF8, e.F0), newHeaderField(Header.TARGET_PATH_UTF8, "/index.html"), newHeaderField(Header.TARGET_SCHEME_UTF8, "http"), newHeaderField(Header.TARGET_SCHEME_UTF8, "https"), newHeaderField(Header.RESPONSE_STATUS_UTF8, ConstantsInternal.TAG_TO_VIRTUAL_GAME_PAD_SDK_SUCCESS), newHeaderField(Header.RESPONSE_STATUS_UTF8, "204"), newHeaderField(Header.RESPONSE_STATUS_UTF8, "206"), newHeaderField(Header.RESPONSE_STATUS_UTF8, "304"), newHeaderField(Header.RESPONSE_STATUS_UTF8, "400"), newHeaderField(Header.RESPONSE_STATUS_UTF8, cm.f7731b), newHeaderField(Header.RESPONSE_STATUS_UTF8, "500"), newEmptyHeaderField("accept-charset"), newHeaderField("accept-encoding", "gzip, deflate"), newEmptyHeaderField("accept-language"), newEmptyHeaderField("accept-ranges"), newEmptyHeaderField("accept"), newEmptyHeaderField("access-control-allow-origin"), newEmptyHeaderField(PointCategory.AGE), newEmptyHeaderField("allow"), newEmptyHeaderField("authorization"), newEmptyHeaderField("cache-control"), newEmptyHeaderField("content-disposition"), newEmptyHeaderField("content-encoding"), newEmptyHeaderField("content-language"), newEmptyHeaderField("content-length"), newEmptyHeaderField("content-location"), newEmptyHeaderField("content-range"), newEmptyHeaderField(d.f7182f), newEmptyHeaderField("cookie"), newEmptyHeaderField("date"), newEmptyHeaderField(f.f80400c), newEmptyHeaderField("expect"), newEmptyHeaderField("expires"), newEmptyHeaderField("from"), newEmptyHeaderField(c.f97430f), newEmptyHeaderField("if-match"), newEmptyHeaderField("if-modified-since"), newEmptyHeaderField("if-none-match"), newEmptyHeaderField("if-range"), newEmptyHeaderField("if-unmodified-since"), newEmptyHeaderField("last-modified"), newEmptyHeaderField("link"), newEmptyHeaderField("location"), newEmptyHeaderField("max-forwards"), newEmptyHeaderField("proxy-authenticate"), newEmptyHeaderField("proxy-authorization"), newEmptyHeaderField("range"), newEmptyHeaderField("referer"), newEmptyHeaderField("refresh"), newEmptyHeaderField("retry-after"), newEmptyHeaderField("server"), newEmptyHeaderField("set-cookie"), newEmptyHeaderField("strict-transport-security"), newEmptyHeaderField("transfer-encoding"), newEmptyHeaderField("user-agent"), newEmptyHeaderField("vary"), newEmptyHeaderField("via"), newEmptyHeaderField("www-authenticate"));
+        STATIC_TABLE = listAsList;
+        STATIC_INDEX_BY_NAME = createMap();
+        length = listAsList.size();
+    }
+
+    private HpackStaticTable() {
+    }
+
+    private static CharSequenceMap<Integer> createMap() {
+        int size = STATIC_TABLE.size();
+        CharSequenceMap<Integer> charSequenceMap = new CharSequenceMap<>(true, UnsupportedValueConverter.instance(), size);
+        while (size > 0) {
+            charSequenceMap.set(getEntry(size).name, Integer.valueOf(size));
+            size--;
+        }
+        return charSequenceMap;
+    }
+
+    static HpackHeaderField getEntry(int i10) {
+        return STATIC_TABLE.get(i10 - 1);
+    }
+
+    static int getIndex(CharSequence charSequence) {
+        Integer num = STATIC_INDEX_BY_NAME.get(charSequence);
+        if (num == null) {
+            return -1;
+        }
+        return num.intValue();
+    }
+
+    static int getIndexInsensitive(CharSequence charSequence, CharSequence charSequence2) {
+        int index = getIndex(charSequence);
+        if (index == -1) {
+            return -1;
+        }
+        while (index <= length) {
+            HpackHeaderField entry = getEntry(index);
+            if (HpackUtil.equalsVariableTime(charSequence, entry.name) && HpackUtil.equalsVariableTime(charSequence2, entry.value)) {
+                return index;
+            }
+            index++;
+        }
+        return -1;
+    }
+
+    private static HpackHeaderField newEmptyHeaderField(String str) {
+        return new HpackHeaderField(AsciiString.cached(str), AsciiString.EMPTY_STRING);
+    }
+
+    private static HpackHeaderField newHeaderField(String str, String str2) {
+        return new HpackHeaderField(AsciiString.cached(str), AsciiString.cached(str2));
+    }
+}

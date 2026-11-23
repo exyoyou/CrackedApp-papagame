@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#bb000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llMoreBtn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="260.0dp">
+        <View android:layout_width="44.0dp" android:layout_height="20.0dp" android:layout_marginRight="30.0dp" />
+        <FrameLayout android:id="@id/flMoreKey1" android:background="@drawable/hm_vir_multiply_bg_on" style="@style/haima_multiple_key_fl">
+            <TextView android:id="@id/tvMoreKey1" android:text="" style="@style/haima_hmcp_multiple_key_tv" />
+            <ImageView android:id="@id/imgMoreDel1" android:visibility="gone" style="@style/haima_hmcp_multiple_key_img_del" />
+        </FrameLayout>
+        <ImageView style="@style/haima_hmcp_multiple_key_img_add" />
+        <FrameLayout android:id="@id/flMoreKey2" style="@style/haima_multiple_key_fl">
+            <TextView android:id="@id/tvMoreKey2" android:text="" style="@style/haima_hmcp_multiple_key_tv" />
+            <ImageView android:id="@id/imgMoreDel2" android:visibility="gone" style="@style/haima_hmcp_multiple_key_img_del" />
+        </FrameLayout>
+        <ImageView style="@style/haima_hmcp_multiple_key_img_add" />
+        <FrameLayout android:id="@id/flMoreKey3" style="@style/haima_multiple_key_fl">
+            <TextView android:id="@id/tvMoreKey3" android:text="" style="@style/haima_hmcp_multiple_key_tv" />
+            <ImageView android:id="@id/imgMoreDel3" android:visibility="gone" style="@style/haima_hmcp_multiple_key_img_del" />
+        </FrameLayout>
+        <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tvClear" android:background="@drawable/hm_vir_operate_bg" android:visibility="invisible" android:layout_width="44.0dp" android:layout_height="20.0dp" android:layout_marginLeft="30.0dp" android:text="清空" />
+    </LinearLayout>
+    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="right" android:id="@id/tvSure" android:background="@drawable/hm_vir_operate_save_bg" android:visibility="gone" android:layout_width="44.0dp" android:layout_height="20.0dp" android:layout_margin="18.0dp" android:text="添加" />
+    <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:id="@id/tvBack" android:padding="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="返回" />
+    <LinearLayout android:layout_gravity="center|bottom" android:orientation="horizontal" android:id="@id/llTabs" android:layout_width="wrap_content" android:layout_height="35.0dp" android:layout_marginBottom="240.0dp">
+        <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tvKeyBoard" android:layout_width="82.0dp" android:layout_height="match_parent" android:text="键盘" />
+        <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tvNumber" android:layout_width="82.0dp" android:layout_height="match_parent" android:text="数字键盘" />
+        <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tvRocker" android:layout_width="82.0dp" android:layout_height="match_parent" android:text="鼠标与摇杆" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@id/viewLine" android:background="#ffeb6800" android:layout_width="40.0dp" android:layout_height="1.0dp" android:layout_marginBottom="240.0dp" />
+    <com.haima.hmcp.virtual.views.HmVirKeyboardLayout android:layout_gravity="center|bottom" android:id="@id/hmKeyboard" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <androidx.viewpager.widget.ViewPager android:layout_gravity="bottom" android:id="@id/viewPager" android:layout_width="match_parent" android:layout_height="220.0dp" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/backImg" android:paddingTop="@dimen/wdp24" android:paddingBottom="@dimen/wdp24" android:layout_width="@dimen/wdp82" android:layout_height="@dimen/wdp82" android:layout_marginTop="@dimen/wdp8" android:src="@drawable/back_icon_2" android:adjustViewBounds="true" android:layout_marginStart="@dimen/wdp6" android:paddingVertical="@dimen/wdp24" />
+        <ImageView android:gravity="center" android:id="@id/titleTv" android:layout_width="@dimen/wdp148" android:layout_height="@dimen/wdp52" android:src="@drawable/font_daily_find" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/flContent" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/rl_bar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

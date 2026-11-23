@@ -1,0 +1,66 @@
+package ms.bz.bd.c.Pgl;
+
+import android.content.Context;
+import android.database.Cursor;
+import android.net.Uri;
+import io.netty.handler.codec.http.HttpConstants;
+import io.netty.handler.codec.memcache.binary.BinaryMemcacheOpcodes;
+import kotlin.jvm.internal.ByteCompanionObject;
+import okio.Utf8;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class a1 {
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    private final Context f94393c;
+
+    public a1(Context context) {
+        this.f94393c = context;
+    }
+
+    private static String c(Cursor cursor) {
+        if (cursor == null || cursor.isClosed()) {
+            return null;
+        }
+        cursor.moveToFirst();
+        int columnIndex = cursor.getColumnIndex((String) com.volcengine.mobsecBiz.matrix.pgla.a(16777217, 0, 0L, "37550b", new byte[]{com.sigmob.sdk.archives.tar.e.L, com.sigmob.sdk.archives.tar.e.L, 74, 84, 10}));
+        String string = columnIndex > 0 ? cursor.getString(columnIndex) : null;
+        int columnIndex2 = cursor.getColumnIndex((String) com.volcengine.mobsecBiz.matrix.pgla.a(16777217, 0, 0L, "81a346", new byte[]{42, 60, BinaryMemcacheOpcodes.DECREMENTQ, 66}));
+        if (columnIndex2 > 0) {
+            cursor.getInt(columnIndex2);
+        }
+        int columnIndex3 = cursor.getColumnIndex((String) com.volcengine.mobsecBiz.matrix.pgla.a(16777217, 0, 0L, "fa1ba0", new byte[]{114, 123, 82, 31, com.sigmob.sdk.archives.tar.e.P, 34, 97}));
+        if (columnIndex3 > 0) {
+            cursor.getLong(columnIndex3);
+        }
+        return string;
+    }
+
+    public final void c(pblk.pblb pblbVar) {
+        Cursor cursorQuery;
+        try {
+            this.f94393c.getPackageManager().getPackageInfo((String) com.volcengine.mobsecBiz.matrix.pgla.a(16777217, 0, 0L, "13a39e", new byte[]{BinaryMemcacheOpcodes.GATK, 62, 31, 9, 11, 119, HttpConstants.SEMICOLON, 8, 37, 45, 38, 61, 11, 74, 3, 60, 61, 2, com.sigmob.sdk.archives.tar.e.M, 109, 41, com.sigmob.sdk.archives.tar.e.M, 1, 67, 13}), 0);
+        } catch (Exception unused) {
+        }
+        Uri uri = Uri.parse((String) com.volcengine.mobsecBiz.matrix.pgla.a(16777217, 0, 0L, "fe0acc", new byte[]{116, 104, 77, 1, 89, 122, 113, BinaryMemcacheOpcodes.GATQ, 46, 126, 116, 104, 78, 91, 81, 113, 108, 94, 116, ByteCompanionObject.MAX_VALUE, 113, 107, 90, BinaryMemcacheOpcodes.FLUSHQ, 89, HttpConstants.COLON, 106, 84, 100, Utf8.REPLACEMENT_BYTE, 126, 99, 80, BinaryMemcacheOpcodes.SETQ, 87, HttpConstants.SEMICOLON}));
+        try {
+            cursorQuery = this.f94393c.getContentResolver().query(uri, null, null, new String[]{(String) com.volcengine.mobsecBiz.matrix.pgla.a(16777217, 0, 0L, "fce8a6", new byte[]{com.sigmob.sdk.archives.tar.e.R, 96, 31, 72})}, null);
+            try {
+                String strC = c(cursorQuery);
+                if (pblbVar != null) {
+                    pblbVar.c(strC);
+                }
+                if (cursorQuery == null) {
+                    return;
+                }
+            } catch (Throwable unused2) {
+                if (cursorQuery == null) {
+                    return;
+                }
+            }
+        } catch (Throwable unused3) {
+            cursorQuery = null;
+        }
+        cursorQuery.close();
+    }
+}

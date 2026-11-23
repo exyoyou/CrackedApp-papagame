@@ -1,0 +1,40 @@
+package com.byazt.jl;
+
+import android.text.TextUtils;
+import java.io.IOException;
+
+/* JADX INFO: loaded from: classes6.dex */
+@com.byazt.zqa.c(c = {0, 1, 157, 46})
+public class n {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public int f15880a;
+
+    /* JADX INFO: renamed from: n, reason: collision with root package name */
+    public int f15881n;
+    public int sp;
+    public int uj;
+
+    public void c(com.byazt.on.c cVar) throws IOException {
+    }
+
+    public void tt(com.byazt.on.c cVar) throws IOException {
+        int iUj = cVar.uj();
+        c(cVar);
+        int iUj2 = iUj - cVar.uj();
+        int i10 = this.uj;
+        if (iUj2 > i10) {
+            throw new IOException("Out of chunk area");
+        }
+        if (iUj2 < i10) {
+            cVar.c(i10 - iUj2);
+        }
+    }
+
+    public static int c(String str) {
+        if (TextUtils.isEmpty(str) || str.length() != 4) {
+            return -1159790593;
+        }
+        return ((str.charAt(3) & 255) << 24) | (str.charAt(0) & 255) | ((str.charAt(1) & 255) << 8) | ((str.charAt(2) & 255) << 16);
+    }
+}

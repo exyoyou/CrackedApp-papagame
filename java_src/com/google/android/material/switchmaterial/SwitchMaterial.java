@@ -1,0 +1,120 @@
+package com.google.android.material.switchmaterial;
+
+import android.content.Context;
+import android.content.res.ColorStateList;
+import android.content.res.TypedArray;
+import android.util.AttributeSet;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SwitchCompat;
+import com.google.android.material.R;
+import com.google.android.material.color.s;
+import com.google.android.material.internal.g0;
+import com.google.android.material.internal.p0;
+import x4.a;
+
+/* JADX INFO: loaded from: classes5.dex */
+public class SwitchMaterial extends SwitchCompat {
+
+    /* JADX INFO: renamed from: f, reason: collision with root package name */
+    private static final int f31962f = R.style.Widget_MaterialComponents_CompoundButton_Switch;
+
+    /* JADX INFO: renamed from: g, reason: collision with root package name */
+    private static final int[][] f31963g = {new int[]{android.R.attr.state_enabled, android.R.attr.state_checked}, new int[]{android.R.attr.state_enabled, -16842912}, new int[]{-16842910, android.R.attr.state_checked}, new int[]{-16842910, -16842912}};
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    @NonNull
+    private final a f31964b;
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    @Nullable
+    private ColorStateList f31965c;
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name */
+    @Nullable
+    private ColorStateList f31966d;
+
+    /* JADX INFO: renamed from: e, reason: collision with root package name */
+    private boolean f31967e;
+
+    public SwitchMaterial(@NonNull Context context) {
+        this(context, null);
+    }
+
+    private ColorStateList getMaterialThemeColorsThumbTintList() {
+        if (this.f31965c == null) {
+            int iD = s.d(this, R.attr.colorSurface);
+            int iD2 = s.d(this, R.attr.colorControlActivated);
+            float dimension = getResources().getDimension(R.dimen.mtrl_switch_thumb_elevation);
+            if (this.f31964b.l()) {
+                dimension += p0.p(this);
+            }
+            int iE = this.f31964b.e(iD, dimension);
+            int[][] iArr = f31963g;
+            int[] iArr2 = new int[iArr.length];
+            iArr2[0] = s.t(iD, iD2, 1.0f);
+            iArr2[1] = iE;
+            iArr2[2] = s.t(iD, iD2, 0.38f);
+            iArr2[3] = iE;
+            this.f31965c = new ColorStateList(iArr, iArr2);
+        }
+        return this.f31965c;
+    }
+
+    private ColorStateList getMaterialThemeColorsTrackTintList() {
+        if (this.f31966d == null) {
+            int[][] iArr = f31963g;
+            int[] iArr2 = new int[iArr.length];
+            int iD = s.d(this, R.attr.colorSurface);
+            int iD2 = s.d(this, R.attr.colorControlActivated);
+            int iD3 = s.d(this, R.attr.colorOnSurface);
+            iArr2[0] = s.t(iD, iD2, 0.54f);
+            iArr2[1] = s.t(iD, iD3, 0.32f);
+            iArr2[2] = s.t(iD, iD2, 0.12f);
+            iArr2[3] = s.t(iD, iD3, 0.12f);
+            this.f31966d = new ColorStateList(iArr, iArr2);
+        }
+        return this.f31966d;
+    }
+
+    public boolean a() {
+        return this.f31967e;
+    }
+
+    @Override // android.widget.TextView, android.view.View
+    protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        if (this.f31967e && getThumbTintList() == null) {
+            setThumbTintList(getMaterialThemeColorsThumbTintList());
+        }
+        if (this.f31967e && getTrackTintList() == null) {
+            setTrackTintList(getMaterialThemeColorsTrackTintList());
+        }
+    }
+
+    public void setUseMaterialThemeColors(boolean z10) {
+        this.f31967e = z10;
+        if (z10) {
+            setThumbTintList(getMaterialThemeColorsThumbTintList());
+            setTrackTintList(getMaterialThemeColorsTrackTintList());
+        } else {
+            setThumbTintList(null);
+            setTrackTintList(null);
+        }
+    }
+
+    public SwitchMaterial(@NonNull Context context, @Nullable AttributeSet attributeSet) {
+        this(context, attributeSet, R.attr.switchStyle);
+    }
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    public SwitchMaterial(@NonNull Context context, @Nullable AttributeSet attributeSet, int i10) {
+        int i11 = f31962f;
+        super(a5.a.c(context, attributeSet, i10, i11), attributeSet, i10);
+        Context context2 = getContext();
+        this.f31964b = new a(context2);
+        TypedArray typedArrayK = g0.k(context2, attributeSet, R.styleable.SwitchMaterial, i10, i11, new int[0]);
+        this.f31967e = typedArrayK.getBoolean(R.styleable.SwitchMaterial_useMaterialThemeColors, false);
+        typedArrayK.recycle();
+    }
+}

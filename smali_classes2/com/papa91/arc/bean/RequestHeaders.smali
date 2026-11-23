@@ -1,0 +1,333 @@
+.class public Lcom/papa91/arc/bean/RequestHeaders;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field private android_ver:Ljava/lang/String;
+
+.field private arm64:Ljava/lang/String;
+
+.field private wf_a:Ljava/lang/String;
+
+.field private wf_ad:Ljava/lang/String;
+
+.field private wf_am_v:Ljava/lang/String;
+
+.field private wf_d:Ljava/lang/String;
+
+.field private wf_i:Ljava/lang/String;
+
+.field private wf_m:Ljava/lang/String;
+
+.field private wf_o:Ljava/lang/String;
+
+.field private wf_pm:Ljava/lang/String;
+
+.field private wf_single:I
+
+.field private wf_sn:Ljava/lang/String;
+
+.field private wufankey:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public getAndroid_ver()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/papa91/arc/bean/RequestHeaders;->android_ver:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getArm64()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/papa91/arc/bean/RequestHeaders;->arm64:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getWf_a()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_a:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getWf_ad()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_ad:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getWf_am_v()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_am_v:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getWf_d()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_d:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getWf_i()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_i:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getWf_m()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_m:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getWf_o()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_o:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getWf_pm()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_pm:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getWf_single()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_single:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getWf_sn()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_sn:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getWufankey()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/papa91/arc/bean/RequestHeaders;->wufankey:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public setAndroid_ver(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/papa91/arc/bean/RequestHeaders;->android_ver:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setArm64(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/papa91/arc/bean/RequestHeaders;->arm64:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setWf_a(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_a:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setWf_ad(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_ad:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setWf_am_v(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_am_v:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setWf_d(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_d:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setWf_i(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_i:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setWf_m(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_m:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setWf_o(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_o:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setWf_pm(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_pm:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setWf_single(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_single:I
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setWf_sn(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/papa91/arc/bean/RequestHeaders;->wf_sn:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setWufankey(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/papa91/arc/bean/RequestHeaders;->wufankey:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method

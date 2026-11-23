@@ -1,0 +1,145 @@
+.class public Lcom/byazt/but/TTCountdownViewForCircle$1;
+.super Landroid/animation/AnimatorListenerAdapter;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lcom/byazt/zqa/c;
+    c = {
+        0x0,
+        0x1,
+        0x2a0,
+        0x3db
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/byazt/but/TTCountdownViewForCircle;->c()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic c:Lcom/byazt/but/TTCountdownViewForCircle;
+
+
+# direct methods
+.method public constructor <init>(Lcom/byazt/but/TTCountdownViewForCircle;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/byazt/but/TTCountdownViewForCircle$1;->c:Lcom/byazt/but/TTCountdownViewForCircle;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public onAnimationCancel(Landroid/animation/Animator;)V
+    .locals 1
+
+    .line 1
+    iget-object p1, p0, Lcom/byazt/but/TTCountdownViewForCircle$1;->c:Lcom/byazt/but/TTCountdownViewForCircle;
+
+    .line 2
+    .line 3
+    const/4 v0, 0x1
+
+    .line 4
+    invoke-static {p1, v0}, Lcom/byazt/but/TTCountdownViewForCircle;->c(Lcom/byazt/but/TTCountdownViewForCircle;Z)Z
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method public onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 1
+
+    .line 1
+    iget-object p1, p0, Lcom/byazt/but/TTCountdownViewForCircle$1;->c:Lcom/byazt/but/TTCountdownViewForCircle;
+
+    .line 2
+    .line 3
+    invoke-static {p1}, Lcom/byazt/but/TTCountdownViewForCircle;->c(Lcom/byazt/but/TTCountdownViewForCircle;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    if-eqz p1, :cond_0
+
+    .line 8
+    .line 9
+    iget-object p1, p0, Lcom/byazt/but/TTCountdownViewForCircle$1;->c:Lcom/byazt/but/TTCountdownViewForCircle;
+
+    .line 10
+    .line 11
+    const/4 v0, 0x0
+
+    .line 12
+    invoke-static {p1, v0}, Lcom/byazt/but/TTCountdownViewForCircle;->c(Lcom/byazt/but/TTCountdownViewForCircle;Z)Z
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+
+    .line 16
+    :cond_0
+    iget-object p1, p0, Lcom/byazt/but/TTCountdownViewForCircle$1;->c:Lcom/byazt/but/TTCountdownViewForCircle;
+
+    .line 17
+    .line 18
+    invoke-static {p1}, Lcom/byazt/but/TTCountdownViewForCircle;->tt(Lcom/byazt/but/TTCountdownViewForCircle;)Lcom/byazt/but/c;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p1
+
+    .line 22
+    if-eqz p1, :cond_1
+
+    .line 23
+    .line 24
+    iget-object p1, p0, Lcom/byazt/but/TTCountdownViewForCircle$1;->c:Lcom/byazt/but/TTCountdownViewForCircle;
+
+    .line 25
+    .line 26
+    invoke-static {p1}, Lcom/byazt/but/TTCountdownViewForCircle;->tt(Lcom/byazt/but/TTCountdownViewForCircle;)Lcom/byazt/but/c;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    invoke-interface {p1}, Lcom/byazt/but/c;->c()V
+
+    .line 31
+    .line 32
+    .line 33
+    :cond_1
+    return-void
+.end method
+
+.method public onAnimationStart(Landroid/animation/Animator;)V
+    .locals 0
+
+    return-void
+.end method

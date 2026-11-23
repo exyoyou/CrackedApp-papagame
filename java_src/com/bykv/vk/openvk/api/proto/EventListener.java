@@ -1,0 +1,6 @@
+package com.bykv.vk.openvk.api.proto;
+
+/* JADX INFO: loaded from: classes9.dex */
+public interface EventListener {
+    ValueSet onEvent(int i10, Result result);
+}

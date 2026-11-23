@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="#fff0f0f0" android:layout_width="match_parent" android:layout_height="@dimen/wdp1" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llHeader" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/shape_ffffff_tr_15" android:layout_width="match_parent" android:layout_height="@dimen/wdp91" android:layout_marginTop="@dimen/wdp9">
+        <View android:background="@drawable/bg_discovery_1" android:layout_width="@dimen/wdp155" android:layout_height="@dimen/wdp14" android:layout_marginTop="@dimen/wdp32" app:layout_constraintEnd_toEndOf="@id/tvTitleForum" app:layout_constraintStart_toStartOf="@id/tvTitleForum" app:layout_constraintTop_toTopOf="@id/tvTitleForum" />
+        <ImageView android:id="@id/tvTitleForum" android:layout_width="@dimen/wdp155" android:layout_height="@dimen/wdp34" android:layout_marginTop="@dimen/wdp30" android:layout_marginBottom="@dimen/wdp10" android:src="@drawable/ic_wufun_forum_title" android:adjustViewBounds="true" android:layout_marginStart="@dimen/wdp30" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

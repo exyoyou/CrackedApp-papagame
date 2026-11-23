@@ -1,0 +1,19 @@
+.class public interface abstract Lcom/haima/hmcp/business/GyroscopeHelper$AngleListener;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/haima/hmcp/business/GyroscopeHelper;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "AngleListener"
+.end annotation
+
+
+# virtual methods
+.method public abstract onAngleChanged(FFF)V
+.end method

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/wdp82" android:layout_marginEnd="@dimen/wdp82"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_top" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp15" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/ivOp" android:layout_width="@dimen/wdp197" android:layout_height="@dimen/wdp80" android:src="@drawable/hm_btn_op_selector" android:scaleType="fitXY" android:layout_marginEnd="@dimen/wdp17" />
+            <ImageView android:id="@id/ivCommon" android:layout_width="@dimen/wdp197" android:layout_height="@dimen/wdp80" android:src="@drawable/hm_btn_common_selector" android:scaleType="fitXY" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:id="@id/main" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cl_top" />
+</androidx.constraintlayout.widget.ConstraintLayout>

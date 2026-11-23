@@ -1,0 +1,96 @@
+.class public Lcom/join/mgps/dto/PaMgrBean$Response$MgrBanLive;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/join/mgps/dto/PaMgrBean$Response;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "MgrBanLive"
+.end annotation
+
+
+# instance fields
+.field private error:I
+
+.field private message:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public getError()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/join/mgps/dto/PaMgrBean$Response$MgrBanLive;->error:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getMessage()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/join/mgps/dto/PaMgrBean$Response$MgrBanLive;->message:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public setError(I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "error"
+        }
+    .end annotation
+
+    .line 1
+    iput p1, p0, Lcom/join/mgps/dto/PaMgrBean$Response$MgrBanLive;->error:I
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setMessage(Ljava/lang/String;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lcom/join/mgps/dto/PaMgrBean$Response$MgrBanLive;->message:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method

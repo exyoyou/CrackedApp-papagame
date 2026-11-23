@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_title_layout_actionbar_height">
+        <ImageView android:id="@id/back_image" android:paddingTop="@dimen/wdp14" android:paddingBottom="@dimen/wdp14" android:layout_width="@dimen/wdp60" android:layout_height="@dimen/wdp60" android:src="@drawable/back_icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="match_parent" android:text="公共界面" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/fl_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

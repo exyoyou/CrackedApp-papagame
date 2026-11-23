@@ -1,0 +1,31 @@
+package com.byazt.fr;
+
+import android.util.SparseArray;
+import com.byazt.hj.z;
+import com.bykv.vk.openvk.api.proto.ValueSet;
+import com.bytedance.sdk.openadsdk.mediation.ad.IMediationNativeToBannerListener;
+import java.util.function.Function;
+
+/* JADX INFO: loaded from: classes6.dex */
+@com.byazt.zqa.c(c = {0, 1, 2053, 54})
+public class ve implements Function<SparseArray<Object>, Object> {
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    private final IMediationNativeToBannerListener f14262c;
+
+    public ve(IMediationNativeToBannerListener iMediationNativeToBannerListener) {
+        this.f14262c = iMediationNativeToBannerListener;
+    }
+
+    @Override // java.util.function.Function
+    public Object apply(SparseArray<Object> sparseArray) {
+        if (this.f14262c == null) {
+            return null;
+        }
+        ValueSet valueSetTt = com.byazt.rl.ve.c(sparseArray).tt();
+        if (valueSetTt.intValue(-99999987) != 266013) {
+            return null;
+        }
+        return this.f14262c.getMediationBannerViewFromNativeAd(new com.byazt.ea.c(z.c(valueSetTt.objectValue(0, Object.class))));
+    }
+}

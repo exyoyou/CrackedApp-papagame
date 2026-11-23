@@ -1,0 +1,65 @@
+package com.byazt.sc;
+
+import android.content.Context;
+import android.text.TextUtils;
+import com.byazt.eu.ve;
+import com.byazt.ly.uj;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
+/* JADX INFO: loaded from: classes6.dex */
+@com.byazt.zqa.c(c = {0, 1, 2144, 20})
+public class c {
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    public final Map<String, com.byazt.id.c> f19603c = new ConcurrentHashMap();
+
+    public Map<String, com.byazt.id.c> c() {
+        return this.f19603c;
+    }
+
+    public Map<String, Object> tt(Context context, Map<String, Object> map, String str) {
+        ve.c(context);
+        com.byazt.id.c cVarC = c(str);
+        if (cVarC != null) {
+            HashMap map2 = new HashMap();
+            map2.put("buyerId", cVarC.getBiddingToken(context, map));
+            map2.put("sdkInfo", cVarC.getSdkInfo(context, map));
+            return map2;
+        }
+        uj ujVarTt = tt(str);
+        if (ujVarTt == null) {
+            return null;
+        }
+        return ujVarTt.getBiddingTokenMap(context, map);
+    }
+
+    public void c(String str, com.byazt.id.c cVar) {
+        this.f19603c.put(str, cVar);
+    }
+
+    public com.byazt.id.c c(String str) {
+        if (TextUtils.isEmpty(str)) {
+            return null;
+        }
+        return this.f19603c.get(str);
+    }
+
+    public String c(Context context, Map<String, Object> map, String str) {
+        ve.c(context);
+        com.byazt.id.c cVarC = c(str);
+        if (cVarC != null) {
+            return cVarC.getBiddingToken(null, null);
+        }
+        uj ujVarTt = tt(str);
+        if (ujVarTt == null) {
+            return null;
+        }
+        return ujVarTt.getBiddingToken(context, map);
+    }
+
+    public uj tt(String str) {
+        return com.byazt.px.tt.c().c(str);
+    }
+}

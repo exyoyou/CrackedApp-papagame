@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="220.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/center" android:layout_width="1.0dp" android:layout_height="1.0dp" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/imgRockerTBLR" android:background="@mipmap/hm_vir_rocker_tblr" android:layout_width="120.0dp" android:layout_height="120.0dp" android:layout_marginRight="20.0dp" android:layout_toLeftOf="@id/center" />
+    <TextView android:layout_width="120.0dp" android:layout_height="wrap_content" android:text="上下左右键轮盘" android:layout_below="@id/imgRockerTBLR" android:layout_alignLeft="@id/imgRockerTBLR" style="@style/haima_hmcp_add_virtual_textview" />
+    <ImageView android:id="@id/imgRockerWASD" android:background="@mipmap/hm_vir_rocker_wasd" android:layout_width="120.0dp" android:layout_height="120.0dp" android:layout_marginRight="20.0dp" android:layout_toLeftOf="@id/imgRockerTBLR" />
+    <TextView android:layout_width="120.0dp" android:layout_height="wrap_content" android:text="WASD键轮盘" android:layout_below="@id/imgRockerWASD" android:layout_alignLeft="@id/imgRockerWASD" style="@style/haima_hmcp_add_virtual_textview" />
+    <ImageView android:id="@id/imgMouseMid" android:background="@mipmap/hm_vir_mouse_mid_up" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginLeft="40.0dp" android:layout_toRightOf="@id/center" />
+    <TextView android:layout_width="48.0dp" android:layout_height="wrap_content" android:text="鼠标中键" android:layout_below="@id/imgMouseMid" android:layout_alignLeft="@id/imgMouseMid" style="@style/haima_hmcp_add_virtual_textview" />
+    <ImageView android:id="@id/imgMouseLeft" android:background="@mipmap/hm_vir_mouse_left_up" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginLeft="20.0dp" android:layout_toRightOf="@id/imgMouseMid" />
+    <TextView android:layout_width="48.0dp" android:layout_height="wrap_content" android:text="鼠标左键" android:layout_below="@id/imgMouseLeft" android:layout_alignLeft="@id/imgMouseLeft" style="@style/haima_hmcp_add_virtual_textview" />
+    <ImageView android:id="@id/imgMouseRight" android:background="@mipmap/hm_vir_mouse_right_up" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginLeft="20.0dp" android:layout_toRightOf="@id/imgMouseLeft" />
+    <TextView android:layout_width="48.0dp" android:layout_height="wrap_content" android:text="鼠标右键" android:layout_below="@id/imgMouseRight" android:layout_alignLeft="@id/imgMouseRight" style="@style/haima_hmcp_add_virtual_textview" />
+    <ImageView android:id="@id/imgMouseWheelUp" android:background="@mipmap/hm_vir_mouse_wheel_top_up" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginLeft="40.0dp" android:layout_marginTop="35.0dp" android:layout_toRightOf="@id/center" android:layout_below="@id/imgMouseMid" />
+    <TextView android:layout_width="48.0dp" android:layout_height="wrap_content" android:text="滚轴上" android:layout_below="@id/imgMouseWheelUp" android:layout_alignLeft="@id/imgMouseWheelUp" style="@style/haima_hmcp_add_virtual_textview" />
+    <ImageView android:id="@id/imgMouseWheelDown" android:background="@mipmap/hm_vir_mouse_wheel_bottom_up" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="35.0dp" android:layout_toRightOf="@id/imgMouseWheelUp" android:layout_below="@id/imgMouseMid" />
+    <TextView android:layout_width="48.0dp" android:layout_height="wrap_content" android:text="滚轴下" android:layout_below="@id/imgMouseWheelDown" android:layout_alignLeft="@id/imgMouseWheelDown" style="@style/haima_hmcp_add_virtual_textview" />
+</RelativeLayout>

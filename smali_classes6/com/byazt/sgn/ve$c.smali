@@ -1,0 +1,34 @@
+.class public interface abstract Lcom/byazt/sgn/ve$c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/byazt/sgn/ve;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "c"
+.end annotation
+
+
+# virtual methods
+.method public abstract a(Landroid/app/Dialog;)V
+.end method
+
+.method public abstract c(Landroid/app/Dialog;)V
+.end method
+
+.method public abstract n(Landroid/app/Dialog;)V
+.end method
+
+.method public abstract tt(Landroid/app/Dialog;)V
+.end method
+
+.method public abstract uj(Landroid/app/Dialog;)V
+.end method
+
+.method public abstract ve(Landroid/app/Dialog;)V
+.end method

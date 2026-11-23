@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#99000000" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/row0" android:layout_width="match_parent" android:layout_height="@dimen/wdp44" android:layout_marginTop="@dimen/wdp5">
+        <FrameLayout android:gravity="center" android:id="@id/k_mouse_l" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/wdp20" android:layout_height="@dimen/wdp30" android:src="@drawable/hm_key_mouse_l" android:scaleType="fitXY" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_mouse_r" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/wdp20" android:layout_height="@dimen/wdp30" android:src="@drawable/hm_key_mouse_r" android:scaleType="fitXY" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_mouse_mid" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/wdp20" android:layout_height="@dimen/wdp30" android:src="@drawable/hm_key_mouse_mid" android:scaleType="fitXY" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_mouse_mu" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/wdp20" android:layout_height="@dimen/wdp30" android:src="@drawable/hm_key_mouse_mu" android:scaleType="fitXY" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_mouse_md" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/wdp20" android:layout_height="@dimen/wdp30" android:src="@drawable/hm_key_mouse_md" android:scaleType="fitXY" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_ana_wasd" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/wdp33" android:layout_height="@dimen/wdp33" android:src="@drawable/hm_key_dir_group" android:scaleType="fitXY" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_ana_arrow" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/wdp33" android:layout_height="@dimen/wdp33" android:src="@drawable/hm_key_dpad" android:scaleType="fitXY" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/row1" android:layout_width="match_parent" android:layout_height="@dimen/wdp44" android:layout_marginTop="@dimen/wdp5">
+        <FrameLayout android:gravity="center" android:id="@id/k_esc" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Esc " android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_f1" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="F1" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_f2" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="F2" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_f3" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="F3" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_f4" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="F4" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_f5" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="F5" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_f6" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="F6" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_f7" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="F7" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_f8" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="F8" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_f9" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="F9" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_f10" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="F10" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_f11" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="F11" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_f12" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="F12" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_ins" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ins" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_del" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Del" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_pg_up" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PgUp" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_pg_dn" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PgDn" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_home" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Home" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_end" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="End" android:textFontWeight="900" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/row2" android:layout_width="match_parent" android:layout_height="@dimen/wdp60" android:layout_marginTop="@dimen/wdp5">
+        <FrameLayout android:gravity="center" android:id="@id/k_backtick" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="`" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_1" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_2" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_3" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_4" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_5" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_6" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_7" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_8" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_9" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_0" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_minus" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_equal" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="=" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_back" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Back" android:textFontWeight="900" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/row3" android:layout_width="match_parent" android:layout_height="@dimen/wdp60" android:layout_marginTop="@dimen/wdp5">
+        <FrameLayout android:gravity="center" android:id="@id/k_tab" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TAB" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_q" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Q" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_w" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="W" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_e" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="E" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_r" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_t" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="T" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_y" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Y" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_u" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="U" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_i" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="I" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_o" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="O" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_p" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="P" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_left_bracket" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_right_bracket" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="]" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_backslash" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\\" android:textFontWeight="900" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/row4" android:layout_width="match_parent" android:layout_height="@dimen/wdp60" android:layout_marginTop="@dimen/wdp5">
+        <FrameLayout android:gravity="center" android:id="@id/k_capslock" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CapsLock" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_a" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_s" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="S" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_d" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_f" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="F" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_g" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="G" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_h" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="H" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_j" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="J" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_k" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="K" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_l" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="L" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_semicolon" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=";" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_apostrophe" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="'" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_enter" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.5" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enter" android:textFontWeight="900" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/row5" android:layout_width="match_parent" android:layout_height="@dimen/wdp60" android:layout_marginTop="@dimen/wdp5">
+        <FrameLayout android:gravity="center" android:id="@id/k_shift_l" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="2.0">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Shift" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_z" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Z" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_x" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="X" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_c" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_v" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="V" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_b" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_n" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="N" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_m" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="M" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_comma" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="," android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_period" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="." android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_slash" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_dir_u" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/wdp17" android:layout_height="@dimen/wdp11" android:src="@drawable/hm_key_dir_u" android:scaleType="fitXY" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_shift_r" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Shift" android:textFontWeight="900" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/row6" android:layout_width="match_parent" android:layout_height="@dimen/wdp45" android:layout_marginTop="@dimen/wdp5" android:layout_marginBottom="@dimen/wdp5">
+        <FrameLayout android:gravity="center" android:id="@id/k_ctrl_l" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ctrl" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_win_l" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Win" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_alt_l" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alt" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_space" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="7.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Space" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_alt_r" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alt" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_win_r" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Win" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_ctrl_r" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <com.join.mgps.customview.GradientTextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ctrl" android:textFontWeight="900" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_dir_l" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/wdp11" android:layout_height="@dimen/wdp17" android:src="@drawable/hm_key_dir_l" android:scaleType="fitXY" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_dir_d" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/wdp17" android:layout_height="@dimen/wdp11" android:src="@drawable/hm_key_dir_d" android:scaleType="fitXY" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/k_dir_r" android:background="@drawable/hm_keyboard_item_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/wdp10">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/wdp11" android:layout_height="@dimen/wdp17" android:src="@drawable/hm_key_dir_r" android:scaleType="fitXY" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/hm_selection_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/wdp50"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/wdp24" android:textColor="@color/white" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp8" android:layout_marginBottom="@dimen/wdp8" android:text="自定义方案" android:layout_marginStart="@dimen/wdp15" android:layout_marginEnd="@dimen/wdp11" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/modify" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginEnd="@dimen/wdp15" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/modify" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="0.0dp" android:layout_marginEnd="@dimen/wdp15" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tvName" app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingEnd="@dimen/wdp12">
+            <ImageView android:layout_gravity="center" android:id="@id/edit" android:layout_width="@dimen/wdp26" android:layout_height="@dimen/wdp24" android:src="@drawable/ic_hm_settings2" android:scaleType="fitXY" />
+        </FrameLayout>
+        <View android:background="@drawable/ic_hm_edit_divider" android:layout_width="@dimen/wdp2" android:layout_height="@dimen/wdp22" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="@dimen/wdp12">
+            <ImageView android:layout_gravity="center" android:id="@id/delete" android:layout_width="@dimen/wdp26" android:layout_height="@dimen/wdp26" android:src="@drawable/ic_hm_close1" android:scaleType="fitXY" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

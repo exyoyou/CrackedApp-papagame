@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="@dimen/wdp60"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fressco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/sdv_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" fressco:failureImage="@drawable/main_normal_icon" fressco:placeholderImage="@drawable/main_normal_icon" fressco:roundWithOverlayColor="#ffffffff" fressco:roundedCornerRadius="@dimen/wdp8" />
+    <View android:id="@id/v_dim_overlay" android:background="#99000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="@dimen/wdp24" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_game_count_badge" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

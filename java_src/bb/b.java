@@ -1,0 +1,9 @@
+package bb;
+
+import com.zyyoona7.picker.ex.WheelHourView;
+import org.jetbrains.annotations.NotNull;
+
+/* JADX INFO: loaded from: classes8.dex */
+public interface b {
+    void f(@NotNull WheelHourView wheelHourView, boolean z10);
+}

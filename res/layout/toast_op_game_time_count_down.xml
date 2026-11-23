@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp15" android:layout_marginBottom="@dimen/wdp15" android:layout_marginStart="@dimen/wdp32" android:layout_marginEnd="@dimen/wdp30" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/charge" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/wdp24" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您的云玩游戏剩余时长:5分钟" />
+        <TextView android:textSize="@dimen/wdp22" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp4" android:text="到期后将自动关闭云游戏，请尽快补充时长" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/wdp24" android:textStyle="bold" android:textColor="#ffff7300" android:id="@id/charge" android:padding="@dimen/wdp4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="补充时长" android:layout_marginEnd="@dimen/wdp28" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/ll" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

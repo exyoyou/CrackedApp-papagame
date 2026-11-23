@@ -1,0 +1,42 @@
+.class public final synthetic Lorg/hmwebrtc/o0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic b:Lorg/hmwebrtc/TextureBufferImpl;
+
+.field public final synthetic c:Lorg/hmwebrtc/TextureBufferImpl$RefCountMonitor;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lorg/hmwebrtc/TextureBufferImpl;Lorg/hmwebrtc/TextureBufferImpl$RefCountMonitor;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lorg/hmwebrtc/o0;->b:Lorg/hmwebrtc/TextureBufferImpl;
+
+    iput-object p2, p0, Lorg/hmwebrtc/o0;->c:Lorg/hmwebrtc/TextureBufferImpl$RefCountMonitor;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lorg/hmwebrtc/o0;->b:Lorg/hmwebrtc/TextureBufferImpl;
+
+    iget-object v1, p0, Lorg/hmwebrtc/o0;->c:Lorg/hmwebrtc/TextureBufferImpl$RefCountMonitor;
+
+    invoke-static {v0, v1}, Lorg/hmwebrtc/TextureBufferImpl;->a(Lorg/hmwebrtc/TextureBufferImpl;Lorg/hmwebrtc/TextureBufferImpl$RefCountMonitor;)V
+
+    return-void
+.end method

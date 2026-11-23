@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+<SinaWeibo SortId="5" AppKey="852578407" AppSecret="1cddad1894d95dbccb88c7068bca2a23" ShareByAppClient="true" RedirectUrl="http://www.sina.com" />
+<Wechat SortId="1" AppId="wx72fb0a0b0f904dbd" AppSecret="6cfb56cfb0fd55c20636018412f6592e" />
+<QQ SortId="3" AppId="1106214717" AppKey="MpOKttSNt8q3tF5P" ShareByAppClient="true" />
+<QZone SortId="4" AppId="1106214717" AppKey="MpOKttSNt8q3tF5P" ShareByAppClient="true" />
+<WechatMoments SortId="2" AppId="wx72fb0a0b0f904dbd" AppSecret="6cfb56cfb0fd55c20636018412f6592e" />
+</DevInfor>

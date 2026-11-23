@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_root" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_entry" android:layout_width="match_parent" android:layout_height="@dimen/wdp198">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rv_list" android:layout_width="match_parent" android:layout_height="@dimen/wdp144" />
+        <com.join.mgps.widget.indicator.UIndicator android:id="@id/indic_view" android:layout_width="match_parent" android:layout_height="@dimen/wdp6" android:layout_marginTop="@dimen/wdp30" app:circle_rect_corner="@dimen/wdp4" app:circle_rect_itemHeight="@dimen/wdp4" app:circle_rect_itemWidth="@dimen/wdp42" app:circle_rect_radius="@dimen/wdp4" app:normal_color="#ffcccccc" app:orientation="horizontal" app:selected_color="#80ff7300" app:spacing="@dimen/wdp4" app:style="circle_rect" />
+    </LinearLayout>
+</RelativeLayout>

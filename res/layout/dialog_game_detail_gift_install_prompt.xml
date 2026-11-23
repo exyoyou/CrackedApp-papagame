@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:background="@drawable/shape_ffffff_r25" android:paddingBottom="@dimen/wdp48" android:layout_width="@dimen/wdp626" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ivClose" android:layout_width="@dimen/wdp32" android:layout_height="@dimen/wdp32" android:layout_marginTop="@dimen/wdp26" android:src="@drawable/ic_back_close_grey" android:layout_marginEnd="@dimen/wdp26" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/wdp32" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/tvContent" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp80" android:layout_marginStart="@dimen/wdp40" android:layout_marginEnd="@dimen/wdp40" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.join.kotlin.domain.widget.WFTextView android:textSize="@dimen/wdp34" android:textColor="@color/white" android:gravity="center" android:id="@id/tvInstall" android:background="@drawable/shape_linear_f89a35_f8ca35" android:layout_width="@dimen/wdp415" android:layout_height="@dimen/wdp96" android:layout_marginTop="@dimen/wdp48" android:text="立即安装" app:corner="@dimen/wdp48" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvContent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

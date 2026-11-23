@@ -1,0 +1,24 @@
+package io.netty.util.internal.shaded.org.jctools.queues.atomic;
+
+/* JADX INFO: loaded from: classes.dex */
+abstract class MpscAtomicArrayQueueMidPad<E> extends MpscAtomicArrayQueueProducerIndexField<E> {
+    long p01;
+    long p02;
+    long p03;
+    long p04;
+    long p05;
+    long p06;
+    long p07;
+    long p10;
+    long p11;
+    long p12;
+    long p13;
+    long p14;
+    long p15;
+    long p16;
+    long p17;
+
+    MpscAtomicArrayQueueMidPad(int i10) {
+        super(i10);
+    }
+}

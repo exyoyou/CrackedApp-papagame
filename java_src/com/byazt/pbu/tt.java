@@ -1,0 +1,48 @@
+package com.byazt.pbu;
+
+import android.util.SparseArray;
+import com.byazt.nh.ve;
+import com.bykv.vk.openvk.api.proto.PluginValueSet;
+import java.util.function.Function;
+import n0.a;
+
+/* JADX INFO: loaded from: classes6.dex */
+@com.byazt.zqa.c(c = {0, 1, 918, 13})
+public abstract class tt implements Function<SparseArray<Object>, Object> {
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    public PluginValueSet f18613c;
+
+    private PluginValueSet c() {
+        return com.byazt.rl.c.c().tt();
+    }
+
+    public abstract void loadNativeAdByAdm(String str, ve veVar);
+
+    public PluginValueSet values() {
+        PluginValueSet pluginValueSet = this.f18613c;
+        if (pluginValueSet != null) {
+            return pluginValueSet;
+        }
+        PluginValueSet pluginValueSetC = c();
+        this.f18613c = pluginValueSetC;
+        return pluginValueSetC;
+    }
+
+    @Override // java.util.function.Function
+    public Object apply(SparseArray<Object> sparseArray) {
+        if (sparseArray == null) {
+            return null;
+        }
+        PluginValueSet pluginValueSetTt = com.byazt.rl.c.c(sparseArray).tt();
+        int iIntValue = pluginValueSetTt.intValue(-99999987);
+        pluginValueSetTt.objectValue(-99999985, Class.class);
+        if (iIntValue == -99999986) {
+            return values().sparseArray();
+        }
+        if (iIntValue == 270028) {
+            loadNativeAdByAdm((String) pluginValueSetTt.objectValue(0, String.class), new ve(n0.c.a(pluginValueSetTt.objectValue(1, a.a()))));
+        }
+        return null;
+    }
+}

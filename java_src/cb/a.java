@@ -1,0 +1,9 @@
+package cb;
+
+import com.zyyoona7.wheel.WheelView;
+import org.jetbrains.annotations.NotNull;
+
+/* JADX INFO: loaded from: classes8.dex */
+public interface a {
+    void a(@NotNull WheelView wheelView, int i10, int i11);
+}

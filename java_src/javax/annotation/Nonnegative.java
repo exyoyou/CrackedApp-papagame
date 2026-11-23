@@ -1,0 +1,32 @@
+package javax.annotation;
+
+import java.lang.annotation.Documented;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import javax.annotation.meta.TypeQualifier;
+import javax.annotation.meta.When;
+
+/* JADX INFO: loaded from: classes.dex */
+@TypeQualifier(applicableTo = Number.class)
+@Documented
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Nonnegative {
+
+    public static class a implements ub.a<Nonnegative> {
+        @Override // ub.a
+        /* JADX INFO: renamed from: b, reason: merged with bridge method [inline-methods] */
+        public When a(Nonnegative nonnegative, Object obj) {
+            if (!(obj instanceof Number)) {
+                return When.NEVER;
+            }
+            Number number = (Number) obj;
+            boolean z10 = true;
+            if (!(number instanceof Long) ? !(number instanceof Double) ? !(number instanceof Float) ? number.intValue() >= 0 : number.floatValue() >= 0.0f : number.doubleValue() >= 0.0d : number.longValue() >= 0) {
+                z10 = false;
+            }
+            return z10 ? When.NEVER : When.ALWAYS;
+        }
+    }
+
+    When when() default When.ALWAYS;
+}

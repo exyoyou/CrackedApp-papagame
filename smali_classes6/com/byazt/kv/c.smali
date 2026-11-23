@@ -1,0 +1,28 @@
+.class public abstract Lcom/byazt/kv/c;
+.super Lcom/byazt/ylx/tt;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lcom/byazt/zqa/c;
+    c = {
+        0x0,
+        0x1,
+        0x2ef,
+        0x14
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/byazt/ylx/tt;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method

@@ -1,0 +1,262 @@
+.class public final Lcom/wufan/user/service/protobuf/ThirdPartyLoginProto;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/wufan/user/service/protobuf/ThirdPartyLoginProto$Request;,
+        Lcom/wufan/user/service/protobuf/ThirdPartyLoginProto$b;
+    }
+.end annotation
+
+
+# static fields
+.field private static final a:Lcom/google/protobuf/Descriptors$Descriptor;
+
+.field private static final b:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+.field private static c:Lcom/google/protobuf/Descriptors$FileDescriptor;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 11
+
+    .line 1
+    const-string v0, "\n\u001fthird_party_login_request.proto\u001a\u001denumeration/enumeration.proto\"\u00d5\u0001\n\u0007Request\u0012\u000f\n\u0007account\u0018\u0001 \u0001(\t\u0012\u0010\n\u0008password\u0018\u0002 \u0001(\t\u0012\u0010\n\u0008uniqueId\u0018\u0003 \u0001(\t\u0012A\n\u0015theThirdPartLoginType\u0018\u0004 \u0001(\u000e2\".enumeration.TheThirdPartLoginType\u0012\u000f\n\u0007smsCode\u0018\u0005 \u0001(\t\u0012\u0010\n\u0008codeType\u0018\u0006 \u0001(\t\u0012\u000c\n\u0004sign\u0018\u0007 \u0001(\t\u0012\u0012\n\nappVersion\u0018\u0008 \u0001(\t\u0012\r\n\u0005appId\u0018\t \u0001(\tB7\n\u001fcom.wufan.user.service.protobufB\u0014ThirdPartyLoginProtob\u0006proto3"
+
+    .line 2
+    .line 3
+    filled-new-array {v0}, [Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    new-instance v1, Lcom/wufan/user/service/protobuf/ThirdPartyLoginProto$a;
+
+    .line 8
+    .line 9
+    invoke-direct {v1}, Lcom/wufan/user/service/protobuf/ThirdPartyLoginProto$a;-><init>()V
+
+    .line 10
+    .line 11
+    .line 12
+    const/4 v2, 0x1
+
+    .line 13
+    new-array v2, v2, [Lcom/google/protobuf/Descriptors$FileDescriptor;
+
+    .line 14
+    .line 15
+    invoke-static {}, Lcom/wufan/user/service/protobuf/enumeration/a;->b()Lcom/google/protobuf/Descriptors$FileDescriptor;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v3
+
+    .line 19
+    const/4 v4, 0x0
+
+    .line 20
+    aput-object v3, v2, v4
+
+    .line 21
+    .line 22
+    invoke-static {v0, v2, v1}, Lcom/google/protobuf/Descriptors$FileDescriptor;->internalBuildGeneratedFileFrom([Ljava/lang/String;[Lcom/google/protobuf/Descriptors$FileDescriptor;Lcom/google/protobuf/Descriptors$FileDescriptor$InternalDescriptorAssigner;)V
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-static {}, Lcom/wufan/user/service/protobuf/ThirdPartyLoginProto;->d()Lcom/google/protobuf/Descriptors$FileDescriptor;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v0
+
+    .line 29
+    invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v0
+
+    .line 33
+    invoke-interface {v0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v0
+
+    .line 37
+    check-cast v0, Lcom/google/protobuf/Descriptors$Descriptor;
+
+    .line 38
+    .line 39
+    sput-object v0, Lcom/wufan/user/service/protobuf/ThirdPartyLoginProto;->a:Lcom/google/protobuf/Descriptors$Descriptor;
+
+    .line 40
+    .line 41
+    new-instance v1, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+    .line 42
+    .line 43
+    const-string v2, "Account"
+
+    .line 44
+    .line 45
+    const-string v3, "Password"
+
+    .line 46
+    .line 47
+    const-string v4, "UniqueId"
+
+    .line 48
+    .line 49
+    const-string v5, "TheThirdPartLoginType"
+
+    .line 50
+    .line 51
+    const-string v6, "SmsCode"
+
+    .line 52
+    .line 53
+    const-string v7, "CodeType"
+
+    .line 54
+    .line 55
+    const-string v8, "Sign"
+
+    .line 56
+    .line 57
+    const-string v9, "AppVersion"
+
+    .line 58
+    .line 59
+    const-string v10, "AppId"
+
+    .line 60
+    .line 61
+    filled-new-array/range {v2 .. v10}, [Ljava/lang/String;
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-object v2
+
+    .line 65
+    invoke-direct {v1, v0, v2}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;-><init>(Lcom/google/protobuf/Descriptors$Descriptor;[Ljava/lang/String;)V
+
+    .line 66
+    .line 67
+    .line 68
+    sput-object v1, Lcom/wufan/user/service/protobuf/ThirdPartyLoginProto;->b:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+    .line 69
+    .line 70
+    invoke-static {}, Lcom/wufan/user/service/protobuf/enumeration/a;->b()Lcom/google/protobuf/Descriptors$FileDescriptor;
+
+    .line 71
+    .line 72
+    .line 73
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method static synthetic a()Lcom/google/protobuf/Descriptors$Descriptor;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/wufan/user/service/protobuf/ThirdPartyLoginProto;->a:Lcom/google/protobuf/Descriptors$Descriptor;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method static synthetic b()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/wufan/user/service/protobuf/ThirdPartyLoginProto;->b:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method static synthetic c(Lcom/google/protobuf/Descriptors$FileDescriptor;)Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .locals 0
+
+    .line 1
+    sput-object p0, Lcom/wufan/user/service/protobuf/ThirdPartyLoginProto;->c:Lcom/google/protobuf/Descriptors$FileDescriptor;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public static d()Lcom/google/protobuf/Descriptors$FileDescriptor;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/wufan/user/service/protobuf/ThirdPartyLoginProto;->c:Lcom/google/protobuf/Descriptors$FileDescriptor;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public static e(Lcom/google/protobuf/ExtensionRegistry;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "registry"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0}, Lcom/wufan/user/service/protobuf/ThirdPartyLoginProto;->f(Lcom/google/protobuf/ExtensionRegistryLite;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static f(Lcom/google/protobuf/ExtensionRegistryLite;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "registry"
+        }
+    .end annotation
+
+    .line 1
+    return-void
+.end method

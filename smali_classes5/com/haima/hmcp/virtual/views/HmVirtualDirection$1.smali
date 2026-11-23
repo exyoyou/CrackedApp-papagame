@@ -1,0 +1,160 @@
+.class Lcom/haima/hmcp/virtual/views/HmVirtualDirection$1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/haima/hmcp/virtual/HmNetworkBitmapLoader$DownloadListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/haima/hmcp/virtual/views/HmVirtualDirection;->initWH()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/haima/hmcp/virtual/views/HmVirtualDirection;
+
+.field final synthetic val$finalArrowDownUrl:Ljava/lang/String;
+
+
+# direct methods
+.method constructor <init>(Lcom/haima/hmcp/virtual/views/HmVirtualDirection;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/haima/hmcp/virtual/views/HmVirtualDirection$1;->this$0:Lcom/haima/hmcp/virtual/views/HmVirtualDirection;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lcom/haima/hmcp/virtual/views/HmVirtualDirection$1;->val$finalArrowDownUrl:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public onDownloadComplete(Ljava/lang/String;Landroid/graphics/Bitmap;)V
+    .locals 2
+
+    .line 1
+    if-eqz p2, :cond_0
+
+    .line 2
+    .line 3
+    iget-object p1, p0, Lcom/haima/hmcp/virtual/views/HmVirtualDirection$1;->this$0:Lcom/haima/hmcp/virtual/views/HmVirtualDirection;
+
+    .line 4
+    .line 5
+    iget v0, p1, Lcom/haima/hmcp/virtual/views/HmBaseVirtualView;->width:I
+
+    .line 6
+    .line 7
+    iget v1, p1, Lcom/haima/hmcp/virtual/views/HmBaseVirtualView;->height:I
+
+    .line 8
+    .line 9
+    div-int/lit8 v1, v1, 0x2
+
+    .line 10
+    .line 11
+    invoke-static {p2, v0, v1}, Lcom/haima/hmcp/virtual/HmVirtualDeviceUtils;->scaledBitmap(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p2
+
+    .line 15
+    const/4 v0, 0x0
+
+    .line 16
+    invoke-static {p1, v0, p2}, Lcom/haima/hmcp/virtual/views/HmVirtualDirection;->access$000(Lcom/haima/hmcp/virtual/views/HmVirtualDirection;ILandroid/graphics/Bitmap;)V
+
+    .line 17
+    .line 18
+    .line 19
+    :cond_0
+    return-void
+.end method
+
+.method public onDownloadFailed(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
+
+    .line 1
+    iget-object p1, p0, Lcom/haima/hmcp/virtual/views/HmVirtualDirection$1;->this$0:Lcom/haima/hmcp/virtual/views/HmVirtualDirection;
+
+    .line 2
+    .line 3
+    iget-object p1, p1, Lcom/haima/hmcp/virtual/views/HmBaseVirtualView;->TAG:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 6
+    .line 7
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 8
+    .line 9
+    .line 10
+    const-string v1, "initWH: preload failed for arrowDown, url="
+
+    .line 11
+    .line 12
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 13
+    .line 14
+    .line 15
+    iget-object v1, p0, Lcom/haima/hmcp/virtual/views/HmVirtualDirection$1;->val$finalArrowDownUrl:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 18
+    .line 19
+    .line 20
+    const-string v1, ", error="
+
+    .line 21
+    .line 22
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object p2
+
+    .line 32
+    invoke-static {p1, p2}, Lcom/haima/hmcp/utils/LogUtils;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 33
+    .line 34
+    .line 35
+    return-void
+.end method

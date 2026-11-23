@@ -1,0 +1,211 @@
+.class public Lcom/join/mgps/activity/login/SplashAdapter;
+.super Landroidx/recyclerview/widget/RecyclerView$Adapter;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/join/mgps/activity/login/SplashAdapter$ViewHolder;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroidx/recyclerview/widget/RecyclerView$Adapter<",
+        "Lcom/join/mgps/activity/login/SplashAdapter$ViewHolder;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private imgWidth:I
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-static {p1}, Lcom/join/mgps/activity/login/SplashAdapter;->getScreenWidth(Landroid/content/Context;)I
+
+    .line 5
+    .line 6
+    .line 7
+    move-result p1
+
+    .line 8
+    iput p1, p0, Lcom/join/mgps/activity/login/SplashAdapter;->imgWidth:I
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public static getScreenWidth(Landroid/content/Context;)I
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
+
+    .line 1
+    const-string v0, "window"
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Landroid/view/WindowManager;
+
+    .line 8
+    .line 9
+    invoke-interface {p0}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    invoke-virtual {p0}, Landroid/view/Display;->getWidth()I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result p0
+
+    .line 17
+    return p0
+.end method
+
+
+# virtual methods
+.method public getItemCount()I
+    .locals 1
+
+    const v0, 0x7fffffff
+
+    return v0
+.end method
+
+.method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1010
+        }
+        names = {
+            "holder",
+            "position"
+        }
+    .end annotation
+
+    .line 2
+    check-cast p1, Lcom/join/mgps/activity/login/SplashAdapter$ViewHolder;
+
+    invoke-virtual {p0, p1, p2}, Lcom/join/mgps/activity/login/SplashAdapter;->onBindViewHolder(Lcom/join/mgps/activity/login/SplashAdapter$ViewHolder;I)V
+
+    return-void
+.end method
+
+.method public onBindViewHolder(Lcom/join/mgps/activity/login/SplashAdapter$ViewHolder;I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "holder",
+            "position"
+        }
+    .end annotation
+
+    .line 1
+    return-void
+.end method
+
+.method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "parent",
+            "viewType"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Lcom/join/mgps/activity/login/SplashAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/join/mgps/activity/login/SplashAdapter$ViewHolder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/join/mgps/activity/login/SplashAdapter$ViewHolder;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "parent",
+            "viewType"
+        }
+    .end annotation
+
+    .line 2
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object p2
+
+    invoke-static {p2}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    move-result-object p2
+
+    const v0, 0x7f0d08c4
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p2, v0, p1, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p1
+
+    .line 3
+    new-instance p2, Lcom/join/mgps/activity/login/SplashAdapter$ViewHolder;
+
+    invoke-direct {p2, p0, p1}, Lcom/join/mgps/activity/login/SplashAdapter$ViewHolder;-><init>(Lcom/join/mgps/activity/login/SplashAdapter;Landroid/view/View;)V
+
+    return-object p2
+.end method

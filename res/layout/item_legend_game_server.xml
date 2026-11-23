@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="@dimen/wdp6" android:paddingBottom="@dimen/wdp6" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_f6f6f6_r13" android:layout_width="wrap_content" android:layout_height="@dimen/wdp47" android:paddingStart="@dimen/wdp12" android:paddingEnd="@dimen/wdp12">
+        <TextView android:textSize="@dimen/wdp22" android:textColor="#ff000000" android:id="@id/tvServerOpenLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/wdp22" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/tvServerOpenTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/wdp10" />
+    </LinearLayout>
+</FrameLayout>

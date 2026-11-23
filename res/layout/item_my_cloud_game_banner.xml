@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/wdp200">
+            <com.youth.banner.Banner android:id="@id/banner" android:layout_width="match_parent" android:layout_height="@dimen/wdp170" android:layout_marginLeft="@dimen/wdp30" android:layout_marginTop="@dimen/wdp30" android:layout_marginRight="@dimen/wdp30" app:delay_time="5000" app:indicator_drawable_selected="@drawable/shape_home_banner_indicator_selected" app:indicator_drawable_unselected="@drawable/shape_home_banner_indicator_unselected" app:indicator_height="@dimen/wdp8" app:indicator_margin="@dimen/wdp4" app:indicator_selected_height="@dimen/wdp8" app:indicator_selected_width="@dimen/wdp8" app:indicator_width="@dimen/wdp8" app:is_auto_play="true" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

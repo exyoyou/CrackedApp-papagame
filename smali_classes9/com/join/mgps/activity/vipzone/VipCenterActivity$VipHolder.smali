@@ -1,0 +1,50 @@
+.class Lcom/join/mgps/activity/vipzone/VipCenterActivity$VipHolder;
+.super Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/join/mgps/activity/vipzone/VipCenterActivity;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = "VipHolder"
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/join/mgps/activity/vipzone/VipCenterActivity;
+
+
+# direct methods
+.method public constructor <init>(Lcom/join/mgps/activity/vipzone/VipCenterActivity;Landroid/view/View;)V
+    .locals 0
+    .param p1    # Lcom/join/mgps/activity/vipzone/VipCenterActivity;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "itemView"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lcom/join/mgps/activity/vipzone/VipCenterActivity$VipHolder;->this$0:Lcom/join/mgps/activity/vipzone/VipCenterActivity;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

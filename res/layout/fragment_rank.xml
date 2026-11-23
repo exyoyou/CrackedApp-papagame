@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fragment_ranking" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/wdp87">
+        <com.google.android.material.tabs.TabLayout android:id="@id/tablayout" android:layout_width="match_parent" android:layout_height="@dimen/wdp57" android:layout_marginStart="@dimen/wdp30" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/statubar" app:tabBackground="@android:color/transparent" app:tabGravity="start" app:tabIndicatorColor="@color/translucent" app:tabIndicatorHeight="0.0dp" app:tabMinWidth="0.0dp" app:tabMode="scrollable" app:tabPaddingEnd="@dimen/wdp24" app:tabPaddingStart="0.0dp" app:tabRippleColor="@null" />
+    </LinearLayout>
+    <com.join.mgps.customview.ViewPagerCompat android:id="@id/viewPager" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

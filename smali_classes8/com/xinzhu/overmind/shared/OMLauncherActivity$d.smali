@@ -1,0 +1,112 @@
+.class Lcom/xinzhu/overmind/shared/OMLauncherActivity$d;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/xinzhu/overmind/shared/OMLauncherActivity;->onRequestPermissionsResult(I[Ljava/lang/String;[I)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic b:Lcom/xinzhu/overmind/shared/OMLauncherActivity;
+
+
+# direct methods
+.method constructor <init>(Lcom/xinzhu/overmind/shared/OMLauncherActivity;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/xinzhu/overmind/shared/OMLauncherActivity$d;->b:Lcom/xinzhu/overmind/shared/OMLauncherActivity;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 2
+
+    .line 1
+    invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance p1, Landroid/content/Intent;
+
+    .line 5
+    .line 6
+    invoke-direct {p1}, Landroid/content/Intent;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    const-string p2, "android.settings.APPLICATION_DETAILS_SETTINGS"
+
+    .line 10
+    .line 11
+    invoke-virtual {p1, p2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 12
+    .line 13
+    .line 14
+    iget-object p2, p0, Lcom/xinzhu/overmind/shared/OMLauncherActivity$d;->b:Lcom/xinzhu/overmind/shared/OMLauncherActivity;
+
+    .line 15
+    .line 16
+    invoke-virtual {p2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p2
+
+    .line 20
+    const/4 v0, 0x0
+
+    .line 21
+    const-string v1, "package"
+
+    .line 22
+    .line 23
+    invoke-static {v1, p2, v0}, Landroid/net/Uri;->fromParts(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object p2
+
+    .line 27
+    invoke-virtual {p1, p2}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    .line 28
+    .line 29
+    .line 30
+    iget-object p2, p0, Lcom/xinzhu/overmind/shared/OMLauncherActivity$d;->b:Lcom/xinzhu/overmind/shared/OMLauncherActivity;
+
+    .line 31
+    .line 32
+    invoke-virtual {p2, p1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    .line 33
+    .line 34
+    .line 35
+    return-void
+.end method

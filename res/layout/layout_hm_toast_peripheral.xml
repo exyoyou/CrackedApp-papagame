@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/hm_toast_bg" android:paddingLeft="@dimen/wdp22" android:paddingTop="@dimen/wdp14" android:paddingRight="@dimen/wdp22" android:paddingBottom="@dimen/wdp14" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wdp24" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="切换至" />
+    <TextView android:textSize="@dimen/wdp24" android:textColor="#ff0b79ff" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[外接设备]" />
+    <TextView android:textSize="@dimen/wdp24" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="模式" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+package tv.haima.ijk.media.player.pragma;
+
+/* JADX INFO: loaded from: classes10.dex */
+public class Pragma {
+    public static final boolean ENABLE_VERBOSE = true;
+}

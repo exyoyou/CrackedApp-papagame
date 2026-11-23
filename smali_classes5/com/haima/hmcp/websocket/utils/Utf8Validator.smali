@@ -1,0 +1,599 @@
+.class public Lcom/haima/hmcp/websocket/utils/Utf8Validator;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field private static final ACCEPT:I = 0x0
+
+.field private static final DFA:[I
+
+.field private static final REJECT:I = 0x1
+
+
+# instance fields
+.field private mPos:I
+
+.field private mState:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    const/16 v0, 0x190
+
+    .line 2
+    .line 3
+    new-array v0, v0, [I
+
+    .line 4
+    .line 5
+    fill-array-data v0, :array_0
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, Lcom/haima/hmcp/websocket/utils/Utf8Validator;->DFA:[I
+
+    .line 9
+    .line 10
+    return-void
+
+    .line 11
+    :array_0
+    .array-data 4
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x0
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x9
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x7
+        0x8
+        0x8
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0x2
+        0xa
+        0x3
+        0x3
+        0x3
+        0x3
+        0x3
+        0x3
+        0x3
+        0x3
+        0x3
+        0x3
+        0x3
+        0x3
+        0x4
+        0x3
+        0x3
+        0xb
+        0x6
+        0x6
+        0x6
+        0x5
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x8
+        0x0
+        0x1
+        0x2
+        0x3
+        0x5
+        0x8
+        0x7
+        0x1
+        0x1
+        0x1
+        0x4
+        0x6
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x0
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x0
+        0x1
+        0x0
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x2
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x2
+        0x1
+        0x2
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x2
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x2
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x2
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x3
+        0x1
+        0x3
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x3
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x3
+        0x1
+        0x3
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x3
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+        0x1
+    .end array-data
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/haima/hmcp/websocket/utils/Utf8Validator;->reset()V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public isValid()Z
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/haima/hmcp/websocket/utils/Utf8Validator;->mState:I
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 v0, 0x1
+
+    .line 6
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 8
+    :goto_0
+    return v0
+.end method
+
+.method public position()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/haima/hmcp/websocket/utils/Utf8Validator;->mPos:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public reset()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput v0, p0, Lcom/haima/hmcp/websocket/utils/Utf8Validator;->mState:I
+
+    .line 3
+    .line 4
+    iput v0, p0, Lcom/haima/hmcp/websocket/utils/Utf8Validator;->mPos:I
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public validate([B)Z
+    .locals 2
+
+    .line 4
+    array-length v0, p1
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, p1, v1, v0}, Lcom/haima/hmcp/websocket/utils/Utf8Validator;->validate([BII)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public validate([BII)Z
+    .locals 5
+
+    move v0, p2
+
+    :goto_0
+    add-int v1, p2, p3
+
+    const/4 v2, 0x1
+
+    if-ge v0, v1, :cond_1
+
+    .line 1
+    sget-object v1, Lcom/haima/hmcp/websocket/utils/Utf8Validator;->DFA:[I
+
+    iget v3, p0, Lcom/haima/hmcp/websocket/utils/Utf8Validator;->mState:I
+
+    shl-int/lit8 v3, v3, 0x4
+
+    add-int/lit16 v3, v3, 0x100
+
+    aget-byte v4, p1, v0
+
+    and-int/lit16 v4, v4, 0xff
+
+    aget v4, v1, v4
+
+    add-int/2addr v3, v4
+
+    aget v1, v1, v3
+
+    iput v1, p0, Lcom/haima/hmcp/websocket/utils/Utf8Validator;->mState:I
+
+    if-ne v1, v2, :cond_0
+
+    .line 2
+    iget p1, p0, Lcom/haima/hmcp/websocket/utils/Utf8Validator;->mPos:I
+
+    add-int/2addr p1, v0
+
+    iput p1, p0, Lcom/haima/hmcp/websocket/utils/Utf8Validator;->mPos:I
+
+    const/4 p1, 0x0
+
+    return p1
+
+    :cond_0
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 3
+    :cond_1
+    iget p1, p0, Lcom/haima/hmcp/websocket/utils/Utf8Validator;->mPos:I
+
+    add-int/2addr p1, p3
+
+    iput p1, p0, Lcom/haima/hmcp/websocket/utils/Utf8Validator;->mPos:I
+
+    return v2
+.end method

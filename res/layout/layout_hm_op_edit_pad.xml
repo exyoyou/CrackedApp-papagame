@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="#d9000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.join.kotlin.module.hmcloud.pad.HMOpView android:id="@id/op_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@id/op_menu" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_hm_op_edit_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

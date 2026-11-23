@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/hm_pop_bg" android:paddingTop="@dimen/wdp20" android:paddingBottom="@dimen/wdp25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/wdp410" android:paddingStart="@dimen/wdp14" android:paddingEnd="@dimen/wdp12"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wdp5" android:text="可用时长包括" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20">
+        <ImageView android:layout_width="@dimen/wdp33" android:layout_height="@dimen/wdp33" android:src="@drawable/ic_hm_lb_free" android:scaleType="fitXY" android:layout_marginEnd="@dimen/wdp8" />
+        <TextView android:textSize="@dimen/wdp20" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="免费时长：" android:layout_marginStart="@dimen/wdp15" />
+        <TextView android:textSize="@dimen/wdp20" android:textColor="@color/white" android:id="@id/tv_free_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0分钟" android:layout_marginStart="@dimen/wdp15" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20">
+        <ImageView android:layout_width="@dimen/wdp33" android:layout_height="@dimen/wdp33" android:src="@drawable/ic_hm_lb_vip" android:scaleType="fitXY" android:layout_marginEnd="@dimen/wdp8" />
+        <TextView android:textSize="@dimen/wdp20" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="会员时长：" android:layout_marginStart="@dimen/wdp15" />
+        <TextView android:textSize="@dimen/wdp20" android:textColor="@color/white" android:id="@id/tv_vip_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0分钟" android:layout_marginStart="@dimen/wdp15" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20">
+        <ImageView android:layout_width="@dimen/wdp33" android:layout_height="@dimen/wdp33" android:src="@drawable/ic_hm_lb_diamond" android:scaleType="fitXY" android:layout_marginEnd="@dimen/wdp8" />
+        <TextView android:textSize="@dimen/wdp20" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="剩余云钻：" android:layout_marginStart="@dimen/wdp15" />
+        <TextView android:textSize="@dimen/wdp20" android:textColor="@color/white" android:id="@id/tv_diamond" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0(可游玩：0分钟)" android:layout_marginStart="@dimen/wdp15" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20">
+        <ImageView android:layout_width="@dimen/wdp33" android:layout_height="@dimen/wdp33" android:src="@drawable/ic_hm_lb_coin" android:scaleType="fitXY" android:layout_marginEnd="@dimen/wdp8" />
+        <TextView android:textSize="@dimen/wdp20" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="剩余云币：" android:layout_marginStart="@dimen/wdp15" />
+        <TextView android:textSize="@dimen/wdp20" android:textColor="@color/white" android:id="@id/tv_coin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0(可游玩：0分钟)" android:layout_marginStart="@dimen/wdp15" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp5" android:text="扣费顺序" />
+    <TextView android:textSize="@dimen/wdp20" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10" android:text="免费时长>会员时长>云币>云钻" />
+    <TextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp5" android:text="扣费标准" />
+    <TextView android:textSize="@dimen/wdp20" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10" android:text=" · 时长代币:每小时消耗30云钻或300云币" />
+    <TextView android:textSize="@dimen/wdp20" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10" android:text=" · 游戏时长:按自然时长消耗" />
+</LinearLayout>

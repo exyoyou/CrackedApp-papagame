@@ -1,0 +1,152 @@
+.class Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter$2;
+.super Lm/framework/ui/widget/pulltorefresh/GroupListView$GroupListAdapter;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter;-><init>(Lm/framework/ui/widget/pulltorefresh/PullToRefreshView;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter;
+
+
+# direct methods
+.method constructor <init>(Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter$2;->this$0:Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Lm/framework/ui/widget/pulltorefresh/GroupListView$GroupListAdapter;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public getChild(II)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter$2;->this$0:Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2}, Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter;->getChild(II)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method
+
+.method public getChildView(IILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter$2;->this$0:Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2, p3, p4}, Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter;->getChildView(IILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method
+
+.method public getChildrenCount(I)I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter$2;->this$0:Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter;->getChildrenCount(I)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    return p1
+.end method
+
+.method public getGroupCount()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter$2;->this$0:Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter;->getGroupCount()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public getGroupTitle(I)Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter$2;->this$0:Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter;->getGroupTitle(I)Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method
+
+.method public getGroupTitleView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter$2;->this$0:Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2, p3}, Lm/framework/ui/widget/pulltorefresh/PullToRefreshGroupListAdapter;->getGroupTitleView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method

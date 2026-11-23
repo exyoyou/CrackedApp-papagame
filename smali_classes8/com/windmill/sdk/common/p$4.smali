@@ -1,0 +1,303 @@
+.class Lcom/windmill/sdk/common/p$4;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/windmill/sdk/utils/m$a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/windmill/sdk/common/p;->adapterDidAdClick(Lcom/windmill/sdk/custom/WMAdBaseAdapter;Lcom/windmill/sdk/strategy/a;Ljava/util/Map;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/windmill/sdk/strategy/a;
+
+.field final synthetic b:Ljava/util/Map;
+
+.field final synthetic c:Lcom/windmill/sdk/custom/WMAdBaseAdapter;
+
+.field final synthetic d:Lcom/windmill/sdk/common/p;
+
+
+# direct methods
+.method constructor <init>(Lcom/windmill/sdk/common/p;Lcom/windmill/sdk/strategy/a;Ljava/util/Map;Lcom/windmill/sdk/custom/WMAdBaseAdapter;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$strategy",
+            "val$extra",
+            "val$adapter"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lcom/windmill/sdk/common/p$4;->d:Lcom/windmill/sdk/common/p;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lcom/windmill/sdk/common/p$4;->a:Lcom/windmill/sdk/strategy/a;
+
+    .line 4
+    .line 5
+    iput-object p3, p0, Lcom/windmill/sdk/common/p$4;->b:Ljava/util/Map;
+
+    .line 6
+    .line 7
+    iput-object p4, p0, Lcom/windmill/sdk/common/p$4;->c:Lcom/windmill/sdk/custom/WMAdBaseAdapter;
+
+    .line 8
+    .line 9
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public onAddExtra(Ljava/lang/Object;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "pointEntityBase"
+        }
+    .end annotation
+
+    .line 1
+    instance-of v0, p1, Lcom/windmill/sdk/point/PointEntityWind;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_2
+
+    .line 4
+    .line 5
+    check-cast p1, Lcom/windmill/sdk/point/PointEntityWind;
+
+    .line 6
+    .line 7
+    iget-object v0, p0, Lcom/windmill/sdk/common/p$4;->a:Lcom/windmill/sdk/strategy/a;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0}, Lcom/windmill/sdk/strategy/a;->aJ()Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    invoke-virtual {p1, v0}, Lcom/czhj/sdk/common/mta/PointEntityBase;->setLoad_id(Ljava/lang/String;)V
+
+    .line 14
+    .line 15
+    .line 16
+    iget-object v0, p0, Lcom/windmill/sdk/common/p$4;->b:Ljava/util/Map;
+
+    .line 17
+    .line 18
+    if-eqz v0, :cond_0
+
+    .line 19
+    .line 20
+    const-string v1, "offer_id"
+
+    .line 21
+    .line 22
+    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    check-cast v0, Ljava/lang/String;
+
+    .line 27
+    .line 28
+    invoke-virtual {p1, v0}, Lcom/windmill/sdk/point/PointEntityWind;->setOffer_id(Ljava/lang/String;)V
+
+    .line 29
+    .line 30
+    .line 31
+    :cond_0
+    iget-object v0, p0, Lcom/windmill/sdk/common/p$4;->a:Lcom/windmill/sdk/strategy/a;
+
+    .line 32
+    .line 33
+    invoke-virtual {v0}, Lcom/windmill/sdk/strategy/a;->m()D
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-wide v0
+
+    .line 37
+    invoke-static {v0, v1}, Ljava/lang/String;->valueOf(D)Ljava/lang/String;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v0
+
+    .line 41
+    invoke-virtual {p1, v0}, Lcom/windmill/sdk/point/PointEntityWind;->setCurrency_coefficient(Ljava/lang/String;)V
+
+    .line 42
+    .line 43
+    .line 44
+    iget-object v0, p0, Lcom/windmill/sdk/common/p$4;->a:Lcom/windmill/sdk/strategy/a;
+
+    .line 45
+    .line 46
+    invoke-virtual {v0}, Lcom/windmill/sdk/strategy/a;->l()Ljava/lang/Float;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object v0
+
+    .line 50
+    if-eqz v0, :cond_1
+
+    .line 51
+    .line 52
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object v0
+
+    .line 56
+    invoke-virtual {p1, v0}, Lcom/windmill/sdk/point/PointEntityWind;->setExchange_rate(Ljava/lang/String;)V
+
+    .line 57
+    .line 58
+    .line 59
+    :cond_1
+    :try_start_0
+    new-instance v0, Lorg/json/JSONObject;
+
+    .line 60
+    .line 61
+    iget-object v1, p0, Lcom/windmill/sdk/common/p$4;->d:Lcom/windmill/sdk/common/p;
+
+    .line 62
+    .line 63
+    iget-object v1, v1, Lcom/windmill/sdk/common/l;->o:Lcom/windmill/sdk/WindMillAdRequest;
+
+    .line 64
+    .line 65
+    invoke-virtual {v1}, Lcom/windmill/sdk/WindMillAdRequest;->getOptions()Ljava/util/Map;
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-object v1
+
+    .line 69
+    invoke-direct {v0, v1}, Lorg/json/JSONObject;-><init>(Ljava/util/Map;)V
+
+    .line 70
+    .line 71
+    .line 72
+    invoke-virtual {p1}, Lcom/czhj/sdk/common/mta/PointEntitySuper;->getOptions()Ljava/util/Map;
+
+    .line 73
+    .line 74
+    .line 75
+    move-result-object v1
+
+    .line 76
+    const-string v2, "request_options"
+
+    .line 77
+    .line 78
+    invoke-virtual {v0}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+
+    .line 79
+    .line 80
+    .line 81
+    move-result-object v0
+
+    .line 82
+    invoke-interface {v1, v2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 83
+    .line 84
+    .line 85
+    :catchall_0
+    invoke-virtual {p1}, Lcom/czhj/sdk/common/mta/PointEntitySuper;->getOptions()Ljava/util/Map;
+
+    .line 86
+    .line 87
+    .line 88
+    move-result-object v0
+
+    .line 89
+    invoke-static {}, Lcom/windmill/sdk/common/o;->d()Lcom/windmill/sdk/common/o;
+
+    .line 90
+    .line 91
+    .line 92
+    move-result-object v1
+
+    .line 93
+    invoke-virtual {v1}, Lcom/windmill/sdk/common/o;->c()Ljava/lang/String;
+
+    .line 94
+    .line 95
+    .line 96
+    move-result-object v1
+
+    .line 97
+    const-string v2, "active_id"
+
+    .line 98
+    .line 99
+    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 100
+    .line 101
+    .line 102
+    iget-object v0, p0, Lcom/windmill/sdk/common/p$4;->d:Lcom/windmill/sdk/common/p;
+
+    .line 103
+    .line 104
+    iget-object v1, p0, Lcom/windmill/sdk/common/p$4;->c:Lcom/windmill/sdk/custom/WMAdBaseAdapter;
+
+    .line 105
+    .line 106
+    invoke-virtual {v0, v1, p1}, Lcom/windmill/sdk/common/l;->a(Lcom/windmill/sdk/custom/WMAdBaseAdapter;Lcom/windmill/sdk/point/PointEntityWind;)V
+
+    .line 107
+    .line 108
+    .line 109
+    :cond_2
+    return-void
+.end method

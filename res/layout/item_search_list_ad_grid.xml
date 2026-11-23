@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_search_list_ad_grid_0" android:layout_width="match_parent" android:layout_height="@dimen/wdp528"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rv_list" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/wdp20" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

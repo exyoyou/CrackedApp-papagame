@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="#ff191a1f" />
+                    <corners android:radius="@dimen/wdp6" />
+                    <stroke android:width="@dimen/wdp2" android:color="#ff000000" />
+                </shape>
+            </item>
+            <item android:top="@dimen/wdp1" android:bottom="@dimen/wdp1" android:start="@dimen/wdp1" android:end="@dimen/wdp1">
+                <shape>
+                    <gradient android:startColor="#26ffffff" android:endColor="@color/transparent" android:angle="90.0" android:centerColor="@color/transparent" />
+                    <corners android:radius="@dimen/wdp6" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="#ff191a1f" />
+                    <corners android:radius="@dimen/wdp6" />
+                    <stroke android:width="@dimen/wdp2" android:color="#ff000000" />
+                </shape>
+            </item>
+            <item android:top="@dimen/wdp1" android:bottom="@dimen/wdp1" android:start="@dimen/wdp1" android:end="@dimen/wdp1">
+                <shape>
+                    <gradient android:startColor="#26ffffff" android:endColor="@color/transparent" android:angle="-90.0" android:centerColor="@color/transparent" />
+                    <corners android:radius="@dimen/wdp6" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

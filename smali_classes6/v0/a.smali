@@ -1,0 +1,16 @@
+.class public final synthetic Lv0/a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static bridge synthetic a(Landroid/util/ArraySet;Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/util/ArraySet;->add(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    return p0
+.end method

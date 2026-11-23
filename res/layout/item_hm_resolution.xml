@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/btn_hm_default" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv" android:visibility="gone" android:layout_width="@dimen/wdp18" android:layout_height="@dimen/wdp17" android:src="@drawable/ic_diamond" android:layout_marginStart="@dimen/wdp16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/wdp20" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp6" android:layout_marginBottom="@dimen/wdp6" android:text="高清" android:maxLines="1" android:layout_marginStart="@dimen/wdp4" android:layout_marginEnd="@dimen/wdp30" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/iv" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginStart="@dimen/wdp30" />
+</androidx.constraintlayout.widget.ConstraintLayout>

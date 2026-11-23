@@ -1,0 +1,42 @@
+.class public final synthetic Lcom/join/mgps/activity/q6;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic b:Lcom/join/mgps/activity/MGMainActivity;
+
+.field public final synthetic c:Ljava/lang/String;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/join/mgps/activity/MGMainActivity;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/join/mgps/activity/q6;->b:Lcom/join/mgps/activity/MGMainActivity;
+
+    iput-object p2, p0, Lcom/join/mgps/activity/q6;->c:Ljava/lang/String;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/join/mgps/activity/q6;->b:Lcom/join/mgps/activity/MGMainActivity;
+
+    iget-object v1, p0, Lcom/join/mgps/activity/q6;->c:Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lcom/join/mgps/activity/MGMainActivity;->G(Lcom/join/mgps/activity/MGMainActivity;Ljava/lang/String;)V
+
+    return-void
+.end method

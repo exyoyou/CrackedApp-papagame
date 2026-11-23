@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@android:color/system_palette_key_color_primary_light" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="pop" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <com.join.kotlin.module.hmcloud.pad.HMZoomLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.join.kotlin.module.hmcloud.ui.view.AnimateSurfaceView android:id="@id/surface" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.join.kotlin.module.hmcloud.pad.HMZoomLayout>
+    <include layout="@layout/layout_hm_menu_holder" />
+</androidx.constraintlayout.widget.ConstraintLayout>

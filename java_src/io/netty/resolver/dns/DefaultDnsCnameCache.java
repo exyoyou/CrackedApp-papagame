@@ -1,0 +1,67 @@
+package io.netty.resolver.dns;
+
+import io.netty.channel.EventLoop;
+import io.netty.util.AsciiString;
+import io.netty.util.internal.ObjectUtil;
+import java.util.List;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class DefaultDnsCnameCache implements DnsCnameCache {
+    private final Cache<String> cache;
+    private final int maxTtl;
+    private final int minTtl;
+
+    public DefaultDnsCnameCache() {
+        this(0, Cache.MAX_SUPPORTED_TTL_SECS);
+    }
+
+    @Override // io.netty.resolver.dns.DnsCnameCache
+    public void cache(String str, String str2, long j10, EventLoop eventLoop) {
+        ObjectUtil.checkNotNull(str, "hostname");
+        ObjectUtil.checkNotNull(str2, "cname");
+        ObjectUtil.checkNotNull(eventLoop, "loop");
+        this.cache.cache(str, str2, Math.max(this.minTtl, (int) Math.min(this.maxTtl, j10)), eventLoop);
+    }
+
+    @Override // io.netty.resolver.dns.DnsCnameCache
+    public void clear() {
+        this.cache.clear();
+    }
+
+    @Override // io.netty.resolver.dns.DnsCnameCache
+    public String get(String str) {
+        List<? extends String> list = this.cache.get((String) ObjectUtil.checkNotNull(str, "hostname"));
+        if (list == null || list.isEmpty()) {
+            return null;
+        }
+        return list.get(0);
+    }
+
+    public DefaultDnsCnameCache(int i10, int i11) {
+        this.cache = new Cache<String>() { // from class: io.netty.resolver.dns.DefaultDnsCnameCache.1
+            /* JADX INFO: Access modifiers changed from: protected */
+            @Override // io.netty.resolver.dns.Cache
+            public boolean shouldReplaceAll(String str) {
+                return true;
+            }
+
+            /* JADX INFO: Access modifiers changed from: protected */
+            @Override // io.netty.resolver.dns.Cache
+            public boolean equals(String str, String str2) {
+                return AsciiString.contentEqualsIgnoreCase(str, str2);
+            }
+        };
+        int i12 = Cache.MAX_SUPPORTED_TTL_SECS;
+        this.minTtl = Math.min(i12, ObjectUtil.checkPositiveOrZero(i10, "minTtl"));
+        this.maxTtl = Math.min(i12, ObjectUtil.checkPositive(i11, "maxTtl"));
+        if (i10 <= i11) {
+            return;
+        }
+        throw new IllegalArgumentException("minTtl: " + i10 + ", maxTtl: " + i11 + " (expected: 0 <= minTtl <= maxTtl)");
+    }
+
+    @Override // io.netty.resolver.dns.DnsCnameCache
+    public boolean clear(String str) {
+        return this.cache.clear((String) ObjectUtil.checkNotNull(str, "hostname"));
+    }
+}

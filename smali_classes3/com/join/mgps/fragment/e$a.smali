@@ -1,0 +1,99 @@
+.class Lcom/join/mgps/fragment/e$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/join/mgps/fragment/e;->T(Ljava/lang/String;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic b:Ljava/lang/String;
+
+.field final synthetic c:Lcom/join/mgps/fragment/e;
+
+
+# direct methods
+.method constructor <init>(Lcom/join/mgps/fragment/e;Ljava/lang/String;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$msg"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lcom/join/mgps/fragment/e$a;->c:Lcom/join/mgps/fragment/e;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lcom/join/mgps/fragment/e$a;->b:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/join/mgps/fragment/e$a;->c:Lcom/join/mgps/fragment/e;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-static {v0}, Lcom/join/mgps/Util/a3;->b(Landroid/content/Context;)Lcom/join/mgps/Util/a3;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    iget-object v1, p0, Lcom/join/mgps/fragment/e$a;->b:Ljava/lang/String;
+
+    .line 12
+    .line 13
+    invoke-virtual {v0, v1}, Lcom/join/mgps/Util/a3;->d(Ljava/lang/String;)V
+
+    .line 14
+    .line 15
+    .line 16
+    return-void
+.end method

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="left|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cloud_select_yes" />
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/main_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@id/img" android:layout_width="50.0dp" android:layout_height="50.0dp" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp">
+                <TextView android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="aaaaaaaa" />
+                <TextView android:id="@id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="共8个存档" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" android:src="@drawable/handshank_arrow_icon" />
+</FrameLayout>

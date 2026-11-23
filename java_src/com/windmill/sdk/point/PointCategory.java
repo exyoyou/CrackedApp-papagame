@@ -1,0 +1,55 @@
+package com.windmill.sdk.point;
+
+/* JADX INFO: loaded from: classes8.dex */
+public final class PointCategory {
+    public static final String ADAPTER_PLUGIN = "adapter_plugin";
+    public static final String ADULT = "adult";
+    public static final String AD_HIDE = "ad_hide";
+    public static final String AD_SHOW = "ad_show";
+    public static final String AGE = "age";
+    public static final String AGGRE_INIT = "aggre_init";
+    public static final String BID_C2C = "bid_c2c";
+    public static final String BID_RESULT = "bid_result";
+    public static final String CALLBACK_ERROR = "callback_error";
+    public static final String CALLBACK_READY = "callback_ready";
+    public static final String CLICK = "click";
+    public static final String CLOSE = "close";
+    public static final String CONSENT = "consent";
+    public static final String COPPA = "coppa";
+    public static final String CRASH = "crash";
+    public static final String DESTROY = "destroy";
+    public static final String ERROR = "error";
+    public static final String GDPR = "gdpr";
+    public static final String HB_LOSE = "hb_lose";
+    public static final String HB_TRACKING = "hb_tracking";
+    public static final String HB_WIN = "hb_win";
+    public static final String INIT = "init";
+    public static final String INIT_EXCEPTION = "init_exception";
+    public static final String LANDING_PAGE_SHOW = "landing_page_show";
+    public static final String LOAD = "load";
+    public static final String LOSE = "lose";
+    public static final String LOW_PRICE = "low_price";
+    public static final String PERSONALIZED = "personalized";
+    public static final String PLATFORM_AGGRE_INIT = "platform_aggre_init";
+    public static final String PLAY = "play";
+    public static final String PRIVACY = "privacy";
+    public static final String PULL_RESPOND = "pull_respond";
+    public static final String PULL_WATERFALL = "pull_waterfall";
+    public static final String READY = "ready";
+    public static final String REQUEST_AGGRE_STRATEGY = "request_aggre_strategy";
+    public static final String RESPOND_AGGRE_STRATEGY = "respond_aggre_strategy";
+    public static final String REWARD = "reward";
+    public static final String SCENE_SHOW = "scene_show";
+    public static final String SERVER_REWARD_REQUEST = "server_reward_request";
+    public static final String SERVER_REWARD_RESPONSE = "server_reward_response";
+    public static final String SERVER_SHOW_REQUEST = "server_show_request";
+    public static final String SERVER_SHOW_RESPONSE = "server_show_response";
+    public static final String SESSION_END = "session_end";
+    public static final String SESSION_START = "session_start";
+    public static final String SHOW_AD_SUCCESS_PRICE_GM_PRICE_PATH = "gm_price_path";
+    public static final String SKIP = "skip";
+    public static final String START = "start";
+    public static final String TIME_OUT = "time_out";
+    public static final String VOPEN = "vopen";
+    public static final String WIN = "win";
+}

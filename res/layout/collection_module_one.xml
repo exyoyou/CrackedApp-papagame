@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+    <RelativeLayout android:background="@drawable/gradient_shadow" android:layout_width="match_parent" android:layout_height="@dimen/mgRecomTitlHight" android:layout_alignParentTop="true">
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/top_title" android:paddingLeft="40.0dp" android:layout_width="match_parent" android:layout_height="@dimen/mgRecomTitlHight" android:singleLine="true" />
+    </RelativeLayout>
+    <com.join.mgps.customview.MyGridView android:id="@id/gridViewAlbum" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="60.0dp" android:layout_marginRight="15.0dp" android:layout_marginBottom="15.0dp" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:horizontalSpacing="15.0dp" android:verticalSpacing="15.0dp" android:numColumns="3" android:fadeScrollbars="true" />
+</RelativeLayout>

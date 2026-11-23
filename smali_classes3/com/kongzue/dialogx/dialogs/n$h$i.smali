@@ -1,0 +1,427 @@
+.class Lcom/kongzue/dialogx/dialogs/n$h$i;
+.super Lcom/kongzue/dialogx/interfaces/g;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/kongzue/dialogx/dialogs/n$h;->e()Lcom/kongzue/dialogx/interfaces/g;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/kongzue/dialogx/interfaces/g<",
+        "Lcom/kongzue/dialogx/dialogs/n;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/kongzue/dialogx/dialogs/n$h;
+
+
+# direct methods
+.method constructor <init>(Lcom/kongzue/dialogx/dialogs/n$h;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/kongzue/dialogx/dialogs/n$h$i;->a:Lcom/kongzue/dialogx/dialogs/n$h;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Lcom/kongzue/dialogx/interfaces/g;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic a(Ljava/lang/Object;Landroid/view/ViewGroup;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lcom/kongzue/dialogx/dialogs/n;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1, p2}, Lcom/kongzue/dialogx/dialogs/n$h$i;->c(Lcom/kongzue/dialogx/dialogs/n;Landroid/view/ViewGroup;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public bridge synthetic b(Ljava/lang/Object;Landroid/view/ViewGroup;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lcom/kongzue/dialogx/dialogs/n;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1, p2}, Lcom/kongzue/dialogx/dialogs/n$h$i;->d(Lcom/kongzue/dialogx/dialogs/n;Landroid/view/ViewGroup;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public c(Lcom/kongzue/dialogx/dialogs/n;Landroid/view/ViewGroup;)V
+    .locals 2
+
+    .line 1
+    iget-object p1, p0, Lcom/kongzue/dialogx/dialogs/n$h$i;->a:Lcom/kongzue/dialogx/dialogs/n$h;
+
+    .line 2
+    .line 3
+    iget-object p1, p1, Lcom/kongzue/dialogx/dialogs/n$h;->h:Lcom/kongzue/dialogx/dialogs/n;
+
+    .line 4
+    .line 5
+    invoke-virtual {p1}, Lcom/kongzue/dialogx/interfaces/BaseDialog;->N()Landroid/app/Activity;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    if-nez p1, :cond_0
+
+    .line 10
+    .line 11
+    iget-object p1, p0, Lcom/kongzue/dialogx/dialogs/n$h$i;->a:Lcom/kongzue/dialogx/dialogs/n$h;
+
+    .line 12
+    .line 13
+    iget-object p1, p1, Lcom/kongzue/dialogx/dialogs/n$h;->a:Lcom/kongzue/dialogx/util/views/DialogXBaseRelativeLayout;
+
+    .line 14
+    .line 15
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_0
+    iget-object p1, p0, Lcom/kongzue/dialogx/dialogs/n$h$i;->a:Lcom/kongzue/dialogx/dialogs/n$h;
+
+    .line 21
+    .line 22
+    iget-object p1, p1, Lcom/kongzue/dialogx/dialogs/n$h;->h:Lcom/kongzue/dialogx/dialogs/n;
+
+    .line 23
+    .line 24
+    invoke-virtual {p1}, Lcom/kongzue/dialogx/interfaces/BaseDialog;->N()Landroid/app/Activity;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p1
+
+    .line 28
+    :goto_0
+    iget-object p2, p0, Lcom/kongzue/dialogx/dialogs/n$h$i;->a:Lcom/kongzue/dialogx/dialogs/n$h;
+
+    .line 29
+    .line 30
+    iget-object p2, p2, Lcom/kongzue/dialogx/dialogs/n$h;->h:Lcom/kongzue/dialogx/dialogs/n;
+
+    .line 31
+    .line 32
+    iget p2, p2, Lcom/kongzue/dialogx/dialogs/n;->R:I
+
+    .line 33
+    .line 34
+    if-nez p2, :cond_1
+
+    .line 35
+    .line 36
+    sget p2, Lcom/kongzue/dialogx/R$anim;->anim_dialogx_default_exit:I
+
+    .line 37
+    .line 38
+    :cond_1
+    invoke-static {p1, p2}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object p1
+
+    .line 42
+    iget-object p2, p0, Lcom/kongzue/dialogx/dialogs/n$h$i;->a:Lcom/kongzue/dialogx/dialogs/n$h;
+
+    .line 43
+    .line 44
+    invoke-virtual {p2, p1}, Lcom/kongzue/dialogx/dialogs/n$h;->g(Landroid/view/animation/Animation;)J
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-wide v0
+
+    .line 48
+    invoke-virtual {p1, v0, v1}, Landroid/view/animation/Animation;->setDuration(J)V
+
+    .line 49
+    .line 50
+    .line 51
+    const/4 p2, 0x1
+
+    .line 52
+    invoke-virtual {p1, p2}, Landroid/view/animation/Animation;->setFillAfter(Z)V
+
+    .line 53
+    .line 54
+    .line 55
+    iget-object p2, p0, Lcom/kongzue/dialogx/dialogs/n$h$i;->a:Lcom/kongzue/dialogx/dialogs/n$h;
+
+    .line 56
+    .line 57
+    iget-object p2, p2, Lcom/kongzue/dialogx/dialogs/n$h;->b:Landroid/widget/LinearLayout;
+
+    .line 58
+    .line 59
+    invoke-virtual {p2, p1}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
+
+    .line 60
+    .line 61
+    .line 62
+    iget-object p1, p0, Lcom/kongzue/dialogx/dialogs/n$h$i;->a:Lcom/kongzue/dialogx/dialogs/n$h;
+
+    .line 63
+    .line 64
+    iget-object p1, p1, Lcom/kongzue/dialogx/dialogs/n$h;->a:Lcom/kongzue/dialogx/util/views/DialogXBaseRelativeLayout;
+
+    .line 65
+    .line 66
+    invoke-virtual {p1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object p1
+
+    .line 70
+    const/4 p2, 0x0
+
+    .line 71
+    invoke-virtual {p1, p2}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object p1
+
+    .line 75
+    new-instance p2, Landroid/view/animation/AccelerateInterpolator;
+
+    .line 76
+    .line 77
+    invoke-direct {p2}, Landroid/view/animation/AccelerateInterpolator;-><init>()V
+
+    .line 78
+    .line 79
+    .line 80
+    invoke-virtual {p1, p2}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
+
+    .line 81
+    .line 82
+    .line 83
+    move-result-object p1
+
+    .line 84
+    invoke-virtual {p1, v0, v1}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
+
+    .line 85
+    .line 86
+    .line 87
+    return-void
+.end method
+
+.method public d(Lcom/kongzue/dialogx/dialogs/n;Landroid/view/ViewGroup;)V
+    .locals 3
+
+    .line 1
+    iget-object p1, p0, Lcom/kongzue/dialogx/dialogs/n$h$i;->a:Lcom/kongzue/dialogx/dialogs/n$h;
+
+    .line 2
+    .line 3
+    iget-object p1, p1, Lcom/kongzue/dialogx/dialogs/n$h;->h:Lcom/kongzue/dialogx/dialogs/n;
+
+    .line 4
+    .line 5
+    invoke-virtual {p1}, Lcom/kongzue/dialogx/interfaces/BaseDialog;->N()Landroid/app/Activity;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    iget-object p2, p0, Lcom/kongzue/dialogx/dialogs/n$h$i;->a:Lcom/kongzue/dialogx/dialogs/n$h;
+
+    .line 10
+    .line 11
+    iget-object p2, p2, Lcom/kongzue/dialogx/dialogs/n$h;->h:Lcom/kongzue/dialogx/dialogs/n;
+
+    .line 12
+    .line 13
+    iget p2, p2, Lcom/kongzue/dialogx/dialogs/n;->Q:I
+
+    .line 14
+    .line 15
+    if-nez p2, :cond_0
+
+    .line 16
+    .line 17
+    sget p2, Lcom/kongzue/dialogx/R$anim;->anim_dialogx_default_enter:I
+
+    .line 18
+    .line 19
+    :cond_0
+    invoke-static {p1, p2}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p1
+
+    .line 23
+    iget-object p2, p0, Lcom/kongzue/dialogx/dialogs/n$h$i;->a:Lcom/kongzue/dialogx/dialogs/n$h;
+
+    .line 24
+    .line 25
+    invoke-virtual {p2, p1}, Lcom/kongzue/dialogx/dialogs/n$h;->f(Landroid/view/animation/Animation;)J
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-wide v0
+
+    .line 29
+    new-instance p2, Landroid/view/animation/DecelerateInterpolator;
+
+    .line 30
+    .line 31
+    const/high16 v2, 0x40000000    # 2.0f
+
+    .line 32
+    .line 33
+    invoke-direct {p2, v2}, Landroid/view/animation/DecelerateInterpolator;-><init>(F)V
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-virtual {p1, p2}, Landroid/view/animation/Animation;->setInterpolator(Landroid/view/animation/Interpolator;)V
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-virtual {p1, v0, v1}, Landroid/view/animation/Animation;->setDuration(J)V
+
+    .line 40
+    .line 41
+    .line 42
+    const/4 p2, 0x1
+
+    .line 43
+    invoke-virtual {p1, p2}, Landroid/view/animation/Animation;->setFillAfter(Z)V
+
+    .line 44
+    .line 45
+    .line 46
+    iget-object p2, p0, Lcom/kongzue/dialogx/dialogs/n$h$i;->a:Lcom/kongzue/dialogx/dialogs/n$h;
+
+    .line 47
+    .line 48
+    iget-object p2, p2, Lcom/kongzue/dialogx/dialogs/n$h;->b:Landroid/widget/LinearLayout;
+
+    .line 49
+    .line 50
+    invoke-virtual {p2, p1}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
+
+    .line 51
+    .line 52
+    .line 53
+    iget-object p1, p0, Lcom/kongzue/dialogx/dialogs/n$h$i;->a:Lcom/kongzue/dialogx/dialogs/n$h;
+
+    .line 54
+    .line 55
+    iget-object p1, p1, Lcom/kongzue/dialogx/dialogs/n$h;->a:Lcom/kongzue/dialogx/util/views/DialogXBaseRelativeLayout;
+
+    .line 56
+    .line 57
+    invoke-virtual {p1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object p1
+
+    .line 61
+    invoke-virtual {p1, v0, v1}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-object p1
+
+    .line 65
+    const/high16 p2, 0x3f800000    # 1.0f
+
+    .line 66
+    .line 67
+    invoke-virtual {p1, p2}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object p1
+
+    .line 71
+    new-instance p2, Landroid/view/animation/DecelerateInterpolator;
+
+    .line 72
+    .line 73
+    invoke-direct {p2}, Landroid/view/animation/DecelerateInterpolator;-><init>()V
+
+    .line 74
+    .line 75
+    .line 76
+    invoke-virtual {p1, p2}, Landroid/view/ViewPropertyAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
+
+    .line 77
+    .line 78
+    .line 79
+    move-result-object p1
+
+    .line 80
+    const/4 p2, 0x0
+
+    .line 81
+    invoke-virtual {p1, p2}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
+
+    .line 82
+    .line 83
+    .line 84
+    return-void
+.end method

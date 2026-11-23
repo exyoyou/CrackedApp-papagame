@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/mg_forum_post_item_padding" android:paddingRight="@dimen/mg_forum_post_item_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left|center" android:layout_gravity="left|center" android:orientation="horizontal" android:id="@id/forum_name_parent" android:paddingTop="4.0dp" android:paddingBottom="10.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="12.0dp" android:textColor="#ffa9a9a9" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/forum_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right|center" android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="4.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <ImageView android:id="@id/imageView10" android:layout_width="13.0dp" android:layout_height="11.0dp" android:src="@drawable/look" />
+                <TextView android:textSize="12.0dp" android:textColor="#ffa9a9a9" android:gravity="center_vertical" android:id="@id/forum_post_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="4.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10.0dp">
+                <ImageView android:id="@id/imageView9" android:layout_width="13.0dp" android:layout_height="11.0dp" android:src="@drawable/comment" />
+                <TextView android:textSize="12.0dp" android:textColor="#ffa9a9a9" android:gravity="center_vertical" android:id="@id/forum_post_commit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/post_footer_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="6.0dp" />
+</LinearLayout>

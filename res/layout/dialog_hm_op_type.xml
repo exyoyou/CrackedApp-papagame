@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff212326" android:layout_width="@dimen/wdp900" android:layout_height="@dimen/wdp528"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="#ff2e2e2e" android:layout_width="match_parent" android:layout_height="@dimen/wdp80" android:elevation="@dimen/wdp6">
+        <TextView android:textSize="@dimen/wdp22" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp5" android:text="请选择操作模式" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/ivClose" android:layout_width="@dimen/wdp35" android:layout_height="@dimen/wdp35" android:src="@drawable/ic_hm_close" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/wdp25" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llJoy" android:background="@drawable/hm_btn_op_type_selector" android:layout_width="0.0dp" android:layout_height="@dimen/wdp90" app:layout_constraintBottom_toTopOf="@id/llKeyboard" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvTip" app:layout_constraintVertical_chainStyle="packed" app:layout_constraintWidth_percent="0.7">
+            <ImageView android:layout_width="@dimen/wdp48" android:layout_height="@dimen/wdp36" android:src="@drawable/ic_hm_op_joy" android:scaleType="fitXY" android:layout_marginEnd="@dimen/wdp16" />
+            <TextView android:textSize="@dimen/wdp36" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手柄" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llKeyboard" android:background="@drawable/hm_btn_op_type_selector" android:layout_width="0.0dp" android:layout_height="@dimen/wdp90" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/llJoy" app:layout_constraintWidth_percent="0.7">
+            <ImageView android:layout_width="@dimen/wdp48" android:layout_height="@dimen/wdp36" android:src="@drawable/ic_hm_op_keyboard" android:scaleType="fitXY" android:layout_marginEnd="@dimen/wdp16" />
+            <TextView android:textSize="@dimen/wdp36" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="键鼠" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wdp28" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tvTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hm_op_model_tip" app:layout_constraintBottom_toTopOf="@id/llJoy" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:visibility="gone" android:layout_width="@dimen/wdp58" android:layout_height="@dimen/wdp58" android:layout_marginTop="-2.5999756dp" android:src="@drawable/ic_hm_flag_recommend" android:scaleType="fitXY" android:layout_marginEnd="-3.0dp" app:layout_constraintEnd_toEndOf="@id/llJoy" app:layout_constraintTop_toTopOf="@id/llJoy" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

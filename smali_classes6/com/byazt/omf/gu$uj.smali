@@ -1,0 +1,22 @@
+.class public interface abstract Lcom/byazt/omf/gu$uj;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/byazt/omf/gu;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "uj"
+.end annotation
+
+
+# virtual methods
+.method public abstract c(ILjava/lang/String;)V
+.end method
+
+.method public abstract c(Lcom/byazt/omf/gr$ve;)V
+.end method

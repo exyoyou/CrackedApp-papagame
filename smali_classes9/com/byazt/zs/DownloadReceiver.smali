@@ -1,0 +1,36 @@
+.class public Lcom/byazt/zs/DownloadReceiver;
+.super Landroid/content/BroadcastReceiver;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lcom/byazt/zqa/c;
+    c = {
+        0x0,
+        0x1,
+        0x720,
+        0x3ea
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 0
+
+    return-void
+.end method

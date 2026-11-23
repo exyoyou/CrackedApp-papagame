@@ -1,0 +1,7 @@
+package i0;
+
+/* JADX INFO: loaded from: classes7.dex */
+public interface a {
+    @com.alipay.mobile.framework.service.annotation.a(a = "alipay.security.errorLog.collect")
+    String a(String str);
+}

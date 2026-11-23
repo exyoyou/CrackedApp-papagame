@@ -1,0 +1,41 @@
+package com.beizi.ad.lance.a;
+
+import android.content.Context;
+import android.content.Intent;
+import android.content.pm.ResolveInfo;
+import android.net.Uri;
+import android.text.TextUtils;
+import com.bykv.vk.component.ttvideo.player.C;
+import java.util.List;
+
+/* JADX INFO: loaded from: classes6.dex */
+public class l {
+    public static boolean a(Context context, String str) {
+        if (context == null || TextUtils.isEmpty(str)) {
+            return false;
+        }
+        try {
+            return a(context, a(str));
+        } catch (Exception unused) {
+            return false;
+        }
+    }
+
+    public static Intent a(String str) {
+        return a(str, (String) null);
+    }
+
+    public static Intent a(String str, String str2) {
+        Intent intent = new Intent("android.intent.action.VIEW", Uri.parse(str));
+        if (!TextUtils.isEmpty(str2)) {
+            intent.setPackage(str2);
+        }
+        intent.setFlags(C.ENCODING_PCM_MU_LAW);
+        return intent;
+    }
+
+    public static boolean a(Context context, Intent intent) {
+        List<ResolveInfo> listQueryIntentActivities = context.getPackageManager().queryIntentActivities(intent, 65536);
+        return listQueryIntentActivities != null && listQueryIntentActivities.size() > 0;
+    }
+}

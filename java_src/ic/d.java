@@ -1,0 +1,43 @@
+package ic;
+
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.ServiceConnection;
+import android.os.IBinder;
+import java.util.concurrent.LinkedBlockingQueue;
+
+/* JADX INFO: loaded from: classes.dex */
+public class d {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public Context f91549a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public final LinkedBlockingQueue<IBinder> f91550b = new LinkedBlockingQueue<>(1);
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    public ServiceConnection f91551c = new a();
+
+    public class a implements ServiceConnection {
+        public a() {
+        }
+
+        @Override // android.content.ServiceConnection
+        public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
+            try {
+                kc.a.a("HWDeviceIDHelper", "onServiceConnected");
+                d.this.f91550b.put(iBinder);
+            } catch (Exception e10) {
+                e10.printStackTrace();
+            }
+        }
+
+        @Override // android.content.ServiceConnection
+        public void onServiceDisconnected(ComponentName componentName) {
+        }
+    }
+
+    public d(Context context) {
+        this.f91549a = context;
+    }
+}
