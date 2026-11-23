@@ -95,8 +95,9 @@ jobs:
             --ksAlias "$KEY_ALIAS" \
             --ksPass "$KEYSTORE_PASSWORD" \
             --ksKeyPass "$KEY_PASSWORD" \
-            --out "$BUILD_DIR/signed" \
-            --overwrite
+            --out "$BUILD_DIR/signed"
+          # uber-apk-signer 参数错误时也会返回 0,这里显式检查产物
+          ls "$BUILD_DIR"/signed/*.apk >/dev/null 2>&1 || { echo "::error::签名失败,未生成 APK"; exit 1; }
 
       - name: Collect single APK
         if: steps.guard.outputs.build == 'yes'
