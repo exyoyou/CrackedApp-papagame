@@ -1,8 +1,0 @@
-package com.googlecode.mp4parser.boxes.apple;
-
-/* JADX INFO: loaded from: classes5.dex */
-public class f0 extends z0 {
-    public f0() {
-        super("tvsh");
-    }
-}

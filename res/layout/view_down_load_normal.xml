@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:id="@id/rl_install" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/wdp100" android:minHeight="@dimen/wdp52">
-        <ImageView android:id="@id/iv_image" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
-        <com.join.kotlin.domain.widget.DownloadLabeledProgressView android:id="@id/tv_text" android:layout_width="match_parent" android:layout_height="match_parent" />
-    </RelativeLayout>
-    <TextView android:textSize="@dimen/wdp18" android:textColor="@color/money_text_color" android:id="@id/tv_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" />
-</LinearLayout>

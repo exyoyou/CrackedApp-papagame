@@ -1,6 +1,0 @@
-package com.kwad.components.offline.api.core.network;
-
-/* JADX INFO: loaded from: classes2.dex */
-public interface IIdc {
-    String hostForAPI(@OfflineHostType String str);
-}

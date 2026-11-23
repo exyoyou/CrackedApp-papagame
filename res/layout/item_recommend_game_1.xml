@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_recommend_game_1_0" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/sdv_icon" android:tag="binding_1" android:layout_width="@dimen/wdp100" android:layout_height="@dimen/wdp100" android:layout_marginTop="@dimen/wdp20" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <ImageView android:id="@id/iv_check" android:tag="binding_2" android:layout_width="@dimen/wdp30" android:layout_height="@dimen/wdp30" android:layout_marginBottom="@dimen/wdp80" android:layout_marginStart="@dimen/wdp80" app:layout_constraintBottom_toBottomOf="@id/sdv_icon" app:layout_constraintStart_toStartOf="@id/sdv_icon" />
-    <TextView android:textSize="@dimen/wdp18" android:textColor="#ff333333" android:ellipsize="end" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp10" android:maxEms="5" android:singleLine="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sdv_icon" />
-</androidx.constraintlayout.widget.ConstraintLayout>

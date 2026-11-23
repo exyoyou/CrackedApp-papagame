@@ -1,5 +1,0 @@
-package com.kwad.sdk.f.a;
-
-/* JADX INFO: loaded from: classes2.dex */
-public final /* synthetic */ class d {
-}

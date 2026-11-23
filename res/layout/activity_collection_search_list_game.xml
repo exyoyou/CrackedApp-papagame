@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:tag="layout/activity_collection_search_list_game_0" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:id="@id/title_bar_layout" layout="@layout/topbar_left_title_layout" />
-    <RelativeLayout android:background="@color/activity_default_background" android:layout_width="match_parent" android:layout_height="match_parent">
-        <com.join.kotlin.base.widget.recycleview.XQuickRecyclerView android:id="@id/xrv_list" android:background="@color/activity_default_background" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" />
-    </RelativeLayout>
-</LinearLayout>

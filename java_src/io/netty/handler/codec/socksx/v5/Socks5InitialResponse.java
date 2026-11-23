@@ -1,6 +1,0 @@
-package io.netty.handler.codec.socksx.v5;
-
-/* JADX INFO: loaded from: classes.dex */
-public interface Socks5InitialResponse extends Socks5Message {
-    Socks5AuthMethod authMethod();
-}

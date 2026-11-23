@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/imgIconAlbum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" />
-    <TextView android:id="@id/textViewAlbum" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <Button android:textColor="@color/white" android:id="@id/buttonAlbum" android:background="@color/btn4" android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/install" />
-</LinearLayout>

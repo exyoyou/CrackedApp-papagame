@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" />
-    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/wdp30" android:paddingTop="@dimen/wdp15" android:paddingRight="@dimen/wdp30" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <View android:id="@id/spaceT" android:visibility="gone" android:layout_width="match_parent" android:layout_height="5.0dp" />
-        <com.join.android.app.component.optimizetext.StaticLayoutView android:textSize="@dimen/wdp24" android:textColor="#ffbcbcbc" android:textColorLink="@color/mg_forum_tag_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="来啊，块来啊，赶紧伤害啊" android:maxLines="2" android:lineSpacingMultiplier="1.2" />
-    </LinearLayout>
-</LinearLayout>

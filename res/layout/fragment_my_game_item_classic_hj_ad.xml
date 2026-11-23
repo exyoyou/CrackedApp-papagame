@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@color/white" android:paddingTop="@dimen/wdp12" android:paddingBottom="@dimen/wdp12" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
-    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@id/classic_hj_ad_image" android:layout_width="@dimen/wdp670" android:layout_height="@dimen/wdp155" fresco:actualImageScaleType="fitXY" fresco:placeholderImageScaleType="fitXY" />
-</FrameLayout>

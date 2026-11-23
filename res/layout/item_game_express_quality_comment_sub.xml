@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rootView" android:layout_width="@dimen/wdp110" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/ivGameIcon" android:layout_width="@dimen/wdp76" android:layout_height="@dimen/wdp76" app:failureImage="@drawable/main_normal_icon" app:failureImageScaleType="fitXY" app:placeholderImage="@drawable/main_normal_icon" app:placeholderImageScaleType="fitXY" app:roundedCornerRadius="@dimen/wdp12" />
-    <TextView android:textSize="@dimen/wdp20" android:textColor="#ffd1d1d1" android:ellipsize="end" android:gravity="center" android:id="@id/tvGameName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp8" android:maxLines="1" />
-</LinearLayout>

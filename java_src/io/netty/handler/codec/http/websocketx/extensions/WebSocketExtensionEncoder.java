@@ -1,8 +1,0 @@
-package io.netty.handler.codec.http.websocketx.extensions;
-
-import io.netty.handler.codec.MessageToMessageEncoder;
-import io.netty.handler.codec.http.websocketx.WebSocketFrame;
-
-/* JADX INFO: loaded from: classes.dex */
-public abstract class WebSocketExtensionEncoder extends MessageToMessageEncoder<WebSocketFrame> {
-}

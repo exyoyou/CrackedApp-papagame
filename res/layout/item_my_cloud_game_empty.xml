@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="@dimen/wdp520"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_empty" android:layout_width="match_parent" android:layout_height="match_parent">
-        <ImageView android:id="@id/imageView44" android:layout_width="match_parent" android:layout_height="@dimen/wdp126" android:src="@drawable/arena_no_play" />
-        <TextView android:textSize="@dimen/wdp24" android:textColor="#ffa8a8a8" android:gravity="center" android:id="@id/editText5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp20" android:text="暂无游戏" />
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>

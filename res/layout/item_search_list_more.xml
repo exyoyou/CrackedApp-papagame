@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:tag="layout/item_search_list_more_0" android:layout_width="match_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_search_list_game_more_1" android:layout_width="match_parent" android:layout_height="@dimen/wdp98" android:layout_marginTop="@dimen/wdp20" android:layout_marginBottom="@dimen/wdp20" android:layout_marginStart="@dimen/wdp45" android:layout_marginEnd="@dimen/wdp26">
-        <ImageView android:id="@id/iv_1" android:layout_width="wrap_content" android:layout_height="@dimen/wdp45" android:src="@drawable/font_search_list_game_more_1" app:layout_constraintBottom_toBottomOf="@id/tv_text_1" app:layout_constraintEnd_toStartOf="@id/tv_text_1" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" />
-        <TextView android:textSize="@dimen/wdp40" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tv_text_1" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp18" android:maxEms="5" android:singleLine="true" app:layout_constraintEnd_toStartOf="@id/iv_2" app:layout_constraintStart_toEndOf="@id/iv_1" app:layout_constraintTop_toTopOf="parent" />
-        <ImageView android:id="@id/iv_2" android:layout_width="wrap_content" android:layout_height="@dimen/wdp45" android:src="@drawable/font_search_list_game_more_2" app:layout_constraintBottom_toBottomOf="@id/tv_text_1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toEndOf="@id/tv_text_1" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</LinearLayout>

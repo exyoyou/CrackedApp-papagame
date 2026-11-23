@@ -1,6 +1,0 @@
-package io.reactivex.functions;
-
-/* JADX INFO: loaded from: classes.dex */
-public interface Consumer<T> {
-    void accept(T t10) throws Exception;
-}

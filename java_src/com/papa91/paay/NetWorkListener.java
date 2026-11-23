@@ -1,8 +1,0 @@
-package com.papa91.paay;
-
-/* JADX INFO: loaded from: classes2.dex */
-public interface NetWorkListener {
-    void onFailed(String str);
-
-    void onSuccess(String str);
-}

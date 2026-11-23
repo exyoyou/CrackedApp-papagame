@@ -1,6 +1,0 @@
-package io.reactivex.functions;
-
-/* JADX INFO: loaded from: classes.dex */
-public interface LongConsumer {
-    void accept(long j10) throws Exception;
-}

@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.join.mgps.customview.MarqueeTextView android:textSize="@dimen/wdp24" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvHotContent" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="1"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

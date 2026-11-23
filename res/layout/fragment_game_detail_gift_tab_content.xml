@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.join.kotlin.base.widget.recycleview.XQuickRecyclerView android:id="@id/rvList" android:paddingTop="@dimen/wdp26" android:layout_width="match_parent" android:layout_height="match_parent" />
-    <FrameLayout android:id="@id/guideOverlay" android:focusable="false" android:clickable="false" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" />
-</FrameLayout>

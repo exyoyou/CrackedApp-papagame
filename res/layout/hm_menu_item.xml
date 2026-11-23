@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/hm_menu_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/wdp80"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/icon" android:background="@drawable/ic_hm_settings" android:layout_width="@dimen/wdp37" android:layout_height="@dimen/wdp37" android:layout_marginStart="@dimen/wdp25" android:layout_marginEnd="@dimen/wdp20" />
-    <TextView android:textSize="@dimen/wdp24" android:textColor="#80ffffff" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="常规设置" />
-</LinearLayout>

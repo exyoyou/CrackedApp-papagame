@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:tag="layout/fragment_source_share_0" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.join.kotlin.base.widget.recycleview.XQuickRecyclerView android:id="@id/xrv_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/wdp10" android:layout_marginRight="@dimen/wdp10" app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager" app:spanCount="2" />
-</LinearLayout>

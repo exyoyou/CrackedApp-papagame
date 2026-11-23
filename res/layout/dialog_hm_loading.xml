@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:background="@drawable/hm_loading_bg" android:layout_width="@dimen/wdp170" android:layout_height="@dimen/wdp170">
-        <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.53" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-    <TextView android:textSize="@dimen/wdp26" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp40" android:text="正在为您保存游戏存档..请稍后.." />
-</LinearLayout>

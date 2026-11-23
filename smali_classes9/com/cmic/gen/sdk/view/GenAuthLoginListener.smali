@@ -1,8 +1,0 @@
-.class public interface abstract Lcom/cmic/gen/sdk/view/GenAuthLoginListener;
-.super Ljava/lang/Object;
-.source "SourceFile"
-
-
-# virtual methods
-.method public abstract onAuthLoginListener(Landroid/content/Context;Lcom/cmic/gen/sdk/view/AuthLoginCallBack;)V
-.end method

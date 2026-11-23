@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:tag="layout/everday_new_fragment_0" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.join.android.app.component.xrecyclerview.XRecyclerView android:id="@id/recycleView" android:layout_width="match_parent" android:layout_height="wrap_content" />
-    <include android:id="@id/loadingLayoutMain" layout="@layout/loding_layout_include" />
-    <include android:id="@id/failedLayoutMain" layout="@layout/failed_layout_include" />
-</LinearLayout>

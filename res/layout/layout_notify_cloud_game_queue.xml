@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="@dimen/wdp590" android:layout_height="@dimen/wdp100"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/iv_image" android:layout_width="@dimen/wdp68" android:layout_height="@dimen/wdp68" android:layout_centerVertical="true" />
-    <TextView android:textSize="@dimen/wdp22" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/tv_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在排队中" android:layout_toRightOf="@id/iv_image" android:layout_alignTop="@id/iv_image" android:layout_marginStart="@dimen/wdp16" />
-    <TextView android:textSize="@dimen/wdp20" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/tv_text_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wdp6" android:text="排队成功可进入云游戏" android:layout_toRightOf="@id/iv_image" android:layout_alignBottom="@id/iv_image" android:layout_marginStart="@dimen/wdp16" />
-</RelativeLayout>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/shape_ffffff_r2" android:layout_width="@dimen/wdp16" android:layout_height="@dimen/wdp27"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/wdp20" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_text_1" android:layout_width="match_parent" android:layout_height="match_parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
