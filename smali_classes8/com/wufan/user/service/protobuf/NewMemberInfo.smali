@@ -2109,7 +2109,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/wufan/user/service/protobuf/NewMemberInfo;->isVip_:Z
+    const/4 v0, 0x1
 
     .line 2
     .line 3
