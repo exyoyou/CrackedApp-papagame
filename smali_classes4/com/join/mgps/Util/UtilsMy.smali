@@ -41510,6 +41510,8 @@
 
     .line 67
     :goto_0
+    const/16 v0, 0xa
+
     invoke-virtual {v1, v0}, Lcom/join/mgps/Util/StartGameMeta;->setVipLevel(I)V
 
     .line 68

@@ -1417,7 +1417,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/join/mgps/dto/AccountBean;->svip_level:I
+    const/16 v0, 0xa
 
     .line 2
     .line 3
@@ -1461,7 +1461,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/join/mgps/dto/AccountBean;->vip_level:I
+    const/16 v0, 0xa
 
     .line 2
     .line 3

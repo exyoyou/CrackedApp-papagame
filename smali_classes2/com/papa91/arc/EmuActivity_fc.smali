@@ -3951,6 +3951,8 @@
     .line 485
     move-result v0
 
+    const/16 v0, 0xa
+
     .line 486
     iput v0, v1, Lcom/papa91/activity/EmuBaseActivity;->m_VIP:I
 

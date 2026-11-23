@@ -119,7 +119,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/papa91/arc/bean/PopwindowBean;->popup:Z
+    const/4 v0, 0x0
 
     .line 2
     .line 3
@@ -215,7 +215,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/papa91/arc/bean/PopwindowBean;->popup:Z
+    const/4 v0, 0x0
 
     .line 2
     .line 3

@@ -3531,7 +3531,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/wufan/user/service/protobuf/UserInfo;->isRealName_:I
+    const/4 v0, 0x1
 
     .line 2
     .line 3
@@ -3963,7 +3963,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/wufan/user/service/protobuf/UserInfo;->sVIPLevel_:I
+    const/16 v0, 0xa
 
     .line 2
     .line 3
@@ -5213,7 +5213,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lcom/wufan/user/service/protobuf/UserInfo;->vipLevel_:I
+    const/16 v0, 0xa
 
     .line 2
     .line 3

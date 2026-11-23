@@ -10574,6 +10574,10 @@
 .method public getVip()I
     .locals 1
 
+    const/16 v0, 0xa
+
+    return v0
+
     .line 1
     sget-object v0, Lorg/ppsspp/ppsspp/NativeActivity;->GameID:Ljava/lang/String;
 

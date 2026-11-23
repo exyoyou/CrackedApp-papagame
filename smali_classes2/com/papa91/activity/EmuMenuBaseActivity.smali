@@ -3299,13 +3299,11 @@
     .locals 1
 
     .line 1
-    invoke-static {}, Lcom/papa91/activity/EmuBaseActivity;->getVCLoaded()I
+    const/4 v0, 0x1
 
     .line 2
     .line 3
     .line 4
-    move-result v0
-
     .line 5
     return v0
 .end method
@@ -5071,6 +5069,10 @@
 
 .method public getVip()I
     .locals 1
+
+    const/16 v0, 0xa
+
+    return v0
 
     .line 1
     sget-object v0, Lcom/papa91/activity/EmuBaseActivity;->GameID:Ljava/lang/String;
