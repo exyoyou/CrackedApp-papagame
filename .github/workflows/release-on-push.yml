@@ -1,0 +1,23 @@
+name: Release on push
+
+# 只负责触发,打包逻辑全部在 build_apk.yml。
+# push 事件只运行"被 push 的那个分支里"的 workflow 文件,
+# 所以每个版本分支都必须包含 release-on-push.yml 和 build_apk.yml。
+
+on:
+  push:
+    branches:
+      - '**'
+  workflow_dispatch:
+
+permissions:
+  contents: write                       # 发布 Release 需要
+
+concurrency:
+  group: release-${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  build-apk:
+    uses: ./.github/workflows/build_apk.yml
+    secrets: inherit
